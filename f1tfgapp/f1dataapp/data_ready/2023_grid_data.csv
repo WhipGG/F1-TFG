@@ -1,0 +1,21 @@
+driverId,constructorId,driverRef,forename,surname,dob,firstRaceDate,fullname
+1,131,hamilton,Lewis,Hamilton,1985-01-07,2007-03-18,Lewis Hamilton
+4,117,alonso,Fernando,Alonso,1981-07-29,2001-03-04,Fernando Alonso
+807,210,hulkenberg,Nico,Hülkenberg,1987-08-19,2010-03-14,Nico Hülkenberg
+815,9,perez,Sergio,Pérez,1990-01-26,2011-03-27,Sergio Pérez
+822,51,bottas,Valtteri,Bottas,1989-08-28,2013-03-17,Valtteri Bottas
+825,210,kevin_magnussen,Kevin,Magnussen,1992-10-05,2014-03-16,Kevin Magnussen
+832,6,sainz,Carlos,Sainz,1994-09-01,2015-03-15,Carlos Sainz
+830,9,max_verstappen,Max,Verstappen,1997-09-30,2015-03-15,Max Verstappen
+839,214,ocon,Esteban,Ocon,1996-09-17,2016-08-28,Esteban Ocon
+840,117,stroll,Lance,Stroll,1998-10-29,2017-03-26,Lance Stroll
+842,214,gasly,Pierre,Gasly,1996-02-07,2017-10-01,Pierre Gasly
+844,6,leclerc,Charles,Leclerc,1997-10-16,2018-03-25,Charles Leclerc
+846,1,norris,Lando,Norris,1999-11-13,2019-03-17,Lando Norris
+848,3,albon,Alexander,Albon,1996-03-23,2019-03-17,Alexander Albon
+847,131,russell,George,Russell,1998-02-15,2019-03-17,George Russell
+852,213,tsunoda,Yuki,Tsunoda,2000-05-11,2021-03-28,Yuki Tsunoda
+855,51,zhou,Guanyu,Zhou,1999-05-30,2022-03-20,Guanyu Zhou
+856,213,de_vries,Nyck,de Vries,1995-02-06,2022-09-11,Nyck de Vries
+858,3,sargeant,Logan,Sargeant,2000-12-31,2023-03-05,Logan Sargeant
+857,1,piastri,Oscar,Piastri,2001-04-06,2023-03-05,Oscar Piastri

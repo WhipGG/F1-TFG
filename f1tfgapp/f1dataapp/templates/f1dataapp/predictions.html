@@ -4,5 +4,113 @@
 
 {% block contenido %}
 <main role="main">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-7">
+                <form action="" method="post" class="needs-validation">
+                    {% csrf_token %}
+                    <div class="row">
+                        <div class="col-sm-6 text-center">
+                            <div class="form-group">
+                                <h3>Weather</h3>
+                                <div class="form-check">
+                                    {{ form.warm }}
+                                    <label class="form-check-label" for="{{ form.warm.id_for_label }}">{{ form.warm.label }}</label>
+                                </div>
+                                
+                                <div class="form-check">
+                                    {{ form.cold }}
+                                    <label class="form-check-label" for="{{ form.cold.id_for_label }}">{{ form.cold.label }}</label>
+                                </div>
+                                
+                                <div class="form-check">
+                                    {{ form.dry }}
+                                    <label class="form-check-label" for="{{ form.dry.id_for_label }}">{{ form.dry.label }}</label>
+                                </div>
+                                
+                                <div class="form-check">
+                                    {{ form.wet }}
+                                    <label class="form-check-label" for="{{ form.wet.id_for_label }}">{{ form.wet.label }}</label>
+                                </div>
+                                
+                                <div class="form-check">
+                                    {{ form.cloudy }}
+                                    <label class="form-check-label" for="{{ form.cloudy.id_for_label }}">{{ form.cloudy.label }}</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <h3>Starting Grid</h3>
+                            <div class="form-group">
+                                <label for="{{ form.driver.id_for_label }}">{{ form.driver.label }}</label>
+                                {{ form.driver }}
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="{{ form.constructor.id_for_label }}">{{ form.constructor.label }}</label>
+                                {{ form.constructor }}
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="{{ form.circuit.id_for_label }}">{{ form.circuit.label }}</label>
+                                {{ form.circuit }}
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="{{ form.year.id_for_label }}">{{ form.year.label }}</label>
+                                {{ form.year }}
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="{{ form.grid.id_for_label }}">{{ form.grid.label }}</label>
+                                {{ form.grid }}
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="{{ form.year_round.id_for_label }}">{{ form.year_round.label }}</label>
+                                {{ form.year_round }}
+                            </div>
+                        </div>
+                        <div class="col-sm-12 text-center"><button type="submit" class="btn btn-primary">Predict</button></div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-5">
+                <h3>
+                    1. Max Verstappen
+                </h3>
+                <h3>
+                    2. Lewis Hammilton
+                </h3>
+                <h3>
+                    3. George Russel
+                </h3>
+                <h3>
+                    4. Sergio Perez
+                </h3>
+                <h3>
+                    5. Carlos Sainz
+                </h3>
+                <h3>
+                    6. Lance Stroll
+                </h3>
+                <h3>
+                    7. Fernando Alonso
+                </h3>
+                <h3>
+                    8. Esteban Ocon
+                </h3>
+                <h3>
+                    9. Zhou Guanyu
+                </h3>
+                <h3>
+                    10. Pierre Gasly
+                </h3>
+                <h3>
+                    11. Charles Leclerc
+                </h3>
+            </div>
+        </div>
+    </div>
 </main>
 {% endblock %}
