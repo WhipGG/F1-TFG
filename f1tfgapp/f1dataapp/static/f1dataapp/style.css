@@ -1,0 +1,40 @@
+/* Font links */
+@font-face {
+    font-family: "F1 Regular";
+    src: url(fonts/Formula1-Regular.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "F1 Black";
+    src: url(fonts/Formula1-Black.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "F1 Bold";
+    src: url(fonts/Formula1-Bold.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "F1 Wide";
+    src: url(fonts/Formula1-Wide.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: "F1 Italic";
+    src: url(fonts/Formula1-Italic.ttf) format("truetype");
+}
+
+/* Navbar styles */
+.navbar-brand {
+    font-family: "F1 Regular", Arial, Helvetica, sans-serif;
+}
+
+
+/* Index Styles */
+#next-race-banner {
+    font-family: "F1 Wide", Arial, Helvetica, sans-serif;
+}
+
+#next-race-text {
+    font-family: "F1 Regular", Arial, Helvetica, sans-serif;
+}

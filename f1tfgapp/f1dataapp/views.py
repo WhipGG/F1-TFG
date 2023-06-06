@@ -7,4 +7,4 @@ def index(request):
 
 
 def predictions(request):
-    return render(request, 'f1dataapp/index.html')
+    return render(request, 'f1dataapp/predictions.html')
