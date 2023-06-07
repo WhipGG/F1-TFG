@@ -1,0 +1,1102 @@
+raceId,weather,weather_warm,weather_cold,weather_dry,weather_wet,weather_cloudy
+1,Sunny with temperatures reaching up to 27 °C (81 °F)[2],1,0,0,0,0
+2,"Dry start, with heavy rain and thunderstorm/monsoon later",0,0,1,1,0
+3,Rain,0,0,0,1,0
+4,Sunny,1,0,0,0,0
+5,"Warm, Sunny",1,0,0,0,0
+6,Sunny,1,0,0,0,0
+7,Sunny,1,0,0,0,0
+8,"Dry, overcast",0,0,0,0,1
+9,Sunny and overcast,1,0,0,0,1
+10,Sunny25 °C (77 °F)[3],0,0,0,0,0
+11,Hot and dry with temperatures reaching up to 33 °C (91 °F)[1],1,0,1,0,0
+12,Clear but Mild,1,0,0,0,0
+13,Mainly sunny,1,0,0,0,0
+14,Hot and Dry,1,0,1,0,0
+15,"Sunny, Dry",0,0,1,0,0
+16,Partially cloudy and dry,0,0,1,0,1
+17,Dry,0,0,1,0,0
+18,"Clear, dry, air temperature of 39 °C (102 °F).",0,0,0,0,0
+19,"Sunny, partly cloudy",0,0,0,0,1
+20,Dry,0,0,1,0,0
+21,Sunny,1,0,0,0,0
+22,Sunny with temperatures reaching up to 17 °C (63 °F)[3],1,0,0,0,0
+23,"Wet, drying later.",0,0,0,0,0
+24,Hot with temperatures approaching 31 °C (88 °F); wind speeds up to 8.9 kilometres per hour (5.5 mph)[1],1,0,0,0,0
+25,Dry at first; light rain in the final stages,0,0,1,1,0
+26,"Rain, later drying",0,0,0,0,0
+27,"Cloudy, later sunny[1]",0,0,0,0,0
+28,"Sunny; Air 30–31 °C (86–88 °F), Track 40–43 °C (104–109 °F)",0,0,0,0,0
+29,Sunny,1,0,0,0,0
+30,"Cloudy, rain in last 3 laps",0,0,0,1,0
+31,"Heavy rain, dry towards the end",0,0,1,0,0
+32,"Dry, Air Temp: 28 °C (82 °F), Wind Speed: 2.2 metres per second (7.2 ft/s), Humidity: 79%",0,0,0,0,0
+33,Cloudy with temperatures reaching up to 17 °C (63 °F)[4],0,0,0,0,1
+34,Dry,0,0,1,0,0
+35,"Rain at beginning and end, otherwise drying",0,0,0,1,0
+36,Clear with temperatures reaching up to 21 °C (70 °F)[1],1,0,0,0,0
+37,Sunny[1],0,0,0,0,0
+38,"Sunny, dry, windy",0,0,0,0,0
+39,Sunny and warm,1,0,0,0,0
+40,"Cloudy, air temp 24–27 °C (75–81 °F), track temp 33–42 °C (91–108 °F)",0,0,0,0,0
+41,Warm with temperatures approaching 26 °C (79 °F); wind speeds up to 5.8 kilometres per hour (3.6 mph)[1],1,0,0,0,0
+42,Warm (33C/91F) and clear,1,0,0,0,0
+43,Cloudy,0,0,0,0,1
+44,Dry and sunny,1,0,1,0,0
+45,Heavy Rain on Lap 1. Drying track at restart. Light Rain before the finish.,0,0,0,1,0
+46,"Sunny, temperatures reaching up to 27 °C (81 °F)[4]",0,0,0,0,0
+47,Sunny,1,0,0,0,0
+48,Sunny,1,0,0,0,0
+49,"Partly cloudy, mild and dry",1,0,1,0,0
+50,Very heavy rain,0,0,0,1,0
+51,Intermittent light rain,0,0,0,1,0
+52,"37 °C (Air), 63 °C (Track)",0,0,0,0,0
+53,"Fine, Dry and HotAir Temp 23 °C (73 °F)[1]Track Temp 40 °C (104 °F)[1] dropping to 34 °C (93 °F)",0,0,1,0,0
+54,"Fine, Air Temp: 33°C, Wind Speed: 1.5 m/s, Humidity: 61%",0,0,0,0,0
+55,Cloudy with sunny breaks. Air temperature 20°C,1,0,0,0,1
+56,Sunny,1,0,0,0,0
+57,,0,0,0,0,0
+58,Sunny,1,0,0,0,0
+59,Fine,1,0,0,0,0
+60,Sunny,1,0,0,0,0
+61,Sunny and warm with temperatures reaching up to 28 °C (82 °F); wind speeds up to 4.1 kilometres per hour (2.5 mph)[1],1,0,0,0,0
+62,"Sunny, hot",1,0,0,0,0
+63,"Sunny, warm",1,0,0,0,0
+64,"Sunny, warm",1,0,0,0,0
+65,Cool and rainy with temperatures reaching up to 20 °C (68 °F)[4],0,1,0,1,0
+66,"Sunny, hot",1,0,0,0,0
+67,Warm and sunny with temperatures reaching up to 27 °C (81 °F)[1],1,0,0,0,0
+68,"Cloudy, wet track that progressively dried up.Rainy during the last few laps.",0,0,0,1,0
+69,Fine,1,0,0,0,0
+70,Temperatures reaching up to 23 °C (73 °F)[1],0,0,0,0,0
+71,"Cool, partly cloudy",0,0,0,0,1
+72,"Fine, Air: 34–36°C (93–97°F) and Track: 44–50°C (111–122°F)",0,0,0,0,0
+73,"Sunny, 42 °C (108 °F)[1]",0,0,0,0,0
+74,Warm and cloudy,1,0,0,0,1
+75,"Sunny, warm",1,0,0,0,0
+76,Fine,1,0,0,0,0
+77,"Partly cloudy, hot and dry",1,0,1,0,0
+78,Cloudy and hot with temperatures approaching 32.5 °C (90.5 °F)Wind speeds up to 5.1 km/h (3.2 mph)[1]Track 43–47 °C (109–117 °F),1,0,0,0,1
+79,"Cloudy, temperatures up to 25.0 °C (77.0 °F); wind speeds up to 17.9 km/h (11.1 mph)[4]",0,0,0,0,0
+80,"Sunny, Air: 32 °C (90 °F), Track 53 °C (127 °F)",0,0,0,0,0
+81,"Sunny, Air: 27 °C (81 °F), Track 47 °C (117 °F)",0,0,0,0,0
+82,"Cloudy with drizzle, but staying dry during the race. Air temp: 24°C.",0,0,1,0,1
+83,"Sunny, Air: 34 °C (93 °F), Track 45 °C (113 °F)",0,0,0,0,0
+84,Sunny; 30°C Air; 45°C Track,0,0,0,0,0
+85,Sunny,1,0,0,0,0
+86,Wet and dry,0,0,1,1,0
+87,"Cloudy, dry, Air: 23 °C (73 °F), Track 22 °C (72 °F)",0,0,0,0,0
+88,Partially cloudy and dry with temperatures reaching up to 25 °C (77 °F)[2],0,0,1,0,1
+89,Sunny,1,0,0,0,0
+90,Dry and cloudyAir temperature 20 °C (68 °F),0,0,1,0,0
+91,"Dry, light rain at the startAir Temp 34 °C (93 °F)",0,0,0,1,0
+92,"Warm, dry and overcast",0,0,1,0,1
+93,"Clear, air temp: 22°C",0,0,0,0,0
+94,Clear,1,0,0,0,0
+95,Dry and sunny,1,0,1,0,0
+96,"Cloudy at start, sunny later",1,0,0,0,1
+97,Clear and mild with temperatures approaching 25.0 °C (77.0 °F)Wind speeds up to 5.8 km/h (3.6 mph)[1]Track 35 °C (95 °F)[2],1,0,0,0,0
+98,Fine with temperatures reaching up to 24 °C (75 °F);Wind speeds up to 20.55 km/h (12.77 mph)[2],1,0,0,0,0
+99,Sunny,1,0,0,0,0
+100,"Cloudy, Air: 17 °C (63 °F), Track 27 °C (81 °F)[2]",0,0,0,0,0
+101,Sunny,1,0,0,0,0
+102,"Warm, dry and sunny, Air: 26 °C (79 °F), Track 42 °C (108 °F)",0,0,1,0,0
+103,Dry with temperatures reaching up to 15 °C (59 °F)[1],0,0,1,0,0
+104,"Wet track at the start, dry later on",0,0,1,1,0
+105,Sunny with temperatures reaching up to 27 °C (81 °F)[1],1,0,0,0,0
+106,Sunny,1,0,0,0,0
+107,Dry/Wet,0,0,0,0,0
+108,"Damp at beginning, dry later, cloudy, mild",1,0,1,1,0
+109,"Fine, air temperature 34°C (93°F)",0,0,0,0,0
+110,Rainy: 20 °C (68 °F),0,0,0,0,0
+111,Mostly cloudy with maximum ambient temperatures reaching 13 degrees during the day.,0,0,0,0,1
+112,Clear,1,0,0,0,0
+113,Mostly cloudy with isolated showers in the area,0,0,0,1,1
+114,"Sunny at start, cloudy later",1,0,0,0,1
+115,Partly cloudy and mild with temperatures reaching a maximum of 19.3 °C (66.7 °F)Wind speeds up to 12.9 km/h (8.0 mph)[1]Track 32 °C (90 °F)[2],1,0,0,0,1
+116,Mostly cloudy with maximum ambient temperatures reaching 25 degrees celsius during the day.,0,0,0,0,1
+117,"Cloudy, Air: 26 °C (79 °F), Track 35 °C (95 °F)",0,0,0,0,0
+118,"Sunny at start, cloudy later, Air: 24 °C (75 °F), Track 29 °C (84 °F)[1]",1,0,0,0,1
+119,Fine,1,0,0,0,0
+120,"Warm, dry and sunny, 28 °C (82 °F)",0,0,1,0,0
+121,Sunny,1,0,0,0,0
+122,Scattered showers with temperatures up to 20.6 °C (69.1 °F);Wind speeds up to 25.93 km/h (16.11 mph)[2],0,0,0,1,0
+123,"Cloudy, Air: 22 °C (72 °F), Track 25 °C (77 °F)",0,0,0,0,0
+124,"Cloudy at start, clearing to sunny skies.",1,0,0,0,1
+125,"Partially cloudy, hot, and dry",0,0,1,0,0
+126,"Clear, Air Temp: 30°C",0,0,0,0,0
+127,"Scattered thunderstorms, but remaining dry. Air Temp: 18°C",0,0,0,0,0
+128,"Clear, Air Temp: 20°C",0,0,0,0,0
+129,"Clear, Air Temp: 20°C",0,0,0,0,0
+130,Fine; air temperature 22 °C (72 °F),0,0,0,0,0
+131,Mostly fine and humid with temperatures reaching a maximum of 24.1 °C (75.4 °F)Wind speeds up to 8 km/h (5.0 mph)[1],1,0,0,0,0
+132,"Mainly Fine, Air Temp: 18°C",0,0,0,0,0
+133,"Dry/Wet, Air Temp: 21°C",0,0,0,0,0
+134,"Warm and sunny, Air Temp: 25°C",1,0,0,0,0
+135,"Fine, Air Temp: 28°C",0,0,0,0,0
+136,"Partially cloudy, hot and sunny, Air Temp: 28 °C (82 °F)[4]",1,0,0,0,0
+137,"Cloudy, Air: 17 °C (63 °F), Track 25 °C (77 °F)[1]",0,0,0,0,0
+138,"Sunny, hot, dry 23°C",0,0,1,0,0
+139,Sunny with temperatures reaching up to 26.7 °C (80.1 °F);Wind speeds approaching a maximum of 18.70 km/h (11.62 mph)[2]Track 34 °C (93 °F),1,0,0,0,0
+140,"Sunny, Air: 26 °C (79 °F), Track 30 °C (86 °F)",0,0,0,0,0
+141,"Cloudy, sunny later",1,0,0,0,0
+142,"Rain and Thunderstorms at start, dry later; Air Temp at start: 32 °C (90 °F)",0,0,1,1,0
+143,"Dry first, rain and thunderstorms later; Air temp: 25–30 °C (77–86 °F)[1] Track 27–40 °C (81–104 °F)",0,0,1,1,0
+144,"Sunny. Air Temp: 14 °C (57 °F), Track 26 °C (79 °F)",0,0,0,0,0
+145,"Overcast, Mild, Dry, Air Temp: 18°C",0,0,0,0,0
+146,"Sunny, Air: 18 to 19 °C (64 to 66 °F), Track 18 to 32 °C (64 to 90 °F)",0,0,0,0,0
+147,"Warm and Sunny, Air Temp: 23 °C (73 °F), Track 36 to 39 °C (97 to 102 °F)",1,0,0,0,0
+148,Sunny,1,0,0,0,0
+149,"Sunny, mild, dry, Air Temp: 21°C",0,0,0,0,0
+150,Sunny,1,0,0,0,0
+151,"Partially cloudy, mild, dry, Air Temp: 16 °C (61 °F), Track 27 °C (81 °F)",0,0,0,0,0
+152,"Partially cloudy, very hot, dry",0,0,1,0,0
+153,"Hot, dry and partially cloudy",0,0,1,0,1
+154,"Overcast, mild, dry, Air Temp: 12 to 16 °C (54 to 61 °F)",0,0,0,0,0
+155,"Sunny, partly cloudy, Air: 19 to 20 °C (66 to 68 °F), Track 26 °C (79 °F)",0,0,0,0,0
+156,"Sunny, cool, Air: 19–21 °C (66–70 °F);Track 27 °C (81 °F)",0,0,0,0,0
+157,"Cloudy, mild, dry, air temp: 24°C",0,0,0,0,0
+158,"Sunny,[2] Air Temp: 20 °C",0,0,0,0,0
+159,"Sunny, Air: 22 °C (72 °F), Track: 35 °C (95 °F)",0,0,0,0,0
+160,"Overcast, mild, dry; 16 °C (61 °F)",0,0,0,0,0
+161,"Sunny, mild, dry, Air Temp: 10 °C (50 °F)",0,0,0,0,0
+162,"Sunny, Mild, Dry",0,0,1,0,0
+163,"Dry at first, rain later on, Air: 11 °C (52 °F), Track: 12 °C (54 °F)",0,0,1,1,0
+164,Sunny,1,0,0,0,0
+165,"Cloudy and raining; Air 17 °C (63 °F),Track 21 °C (70 °F)",0,0,0,0,1
+166,"Sunny, dry, Air Temp: 27°C",0,0,0,0,0
+167,"Partially cloudy, dry",0,0,1,0,0
+168,Dry/Wet,0,0,0,0,0
+169,"Partially cloudy, very hot, dry",0,0,1,0,0
+170,"Wet at start, drying, Air & track temperature; 15 °C (59 °F)",0,0,0,1,0
+171,Sunny with temperatures reaching up to 29 °C (84 °F)[4],1,0,0,0,0
+172,"Cloudy, drying, Air 12 °C (54 °F);Track 14 °C (57 °F)",0,0,0,0,0
+173,Dry/wet,0,0,0,0,0
+174,"Overcast, Very hot, Dry",0,0,1,0,0
+175,Sunny and dry with temperatures reaching up to 19 °C (66 °F)[1],1,0,1,0,0
+176,"Sunny, hot, dry 25 °C (77 °F)[1]",0,0,1,0,0
+177,"Sunny, mild, dry, 23 °C",0,0,0,0,0
+178,"Sunny, hot, dry",0,0,1,0,0
+179,"Cloudy, hot, dry 22 °C (72 °F)[2]",0,0,1,0,0
+180,Hot with temperatures approaching 31.0 °C (87.8 °F)Wind speeds up to 5.1 km/h (3.2 mph)[1]Track 41–43 °C (106–109 °F),1,0,0,0,0
+181,"Overcast, mild, dry at first, rain later on",0,0,1,1,0
+182,"Sunny, mild, dry",0,0,1,0,0
+183,"Overcast, mild, dry",0,0,1,0,0
+184,"Partially cloudy, very hot, dry",0,0,1,0,0
+185,"Partially cloudy, hot, dry, Air: 25 °C (77 °F), Track 37 °C (99 °F)",0,0,0,0,0
+186,"Partially cloudy, mild, dry",0,0,1,0,0
+187,Hot and dry with temperatures reaching up to 30 °C (86 °F)[1],1,0,1,0,0
+188,Wet/Dry,0,0,0,0,0
+189,"Cloudy, hot, dry",0,0,1,0,0
+190,"Overcast, mild, dry",0,0,1,0,0
+191,"Clear with maximum temperatures reaching 24 degrees at the start, increasing to 30 degrees by the end of the race.",1,0,0,0,0
+192,"Mostly cloudy, 31 °C (88 °F)",0,0,0,0,0
+193,Cloudy with variable levels of dryness; temperatures reaching up to 19 °C (66 °F)[2],0,0,0,0,1
+194,"Sunny, 25 °C",0,0,0,0,0
+195,Sunny and warm,1,0,0,0,0
+196,Hot and sunny with temperatures reaching up to 22 °C (72 °F)[1],1,0,0,0,0
+197,Cool and overcast with air temperatures reaching up to 16.0 °C (60.8 °F)Wind speeds up to 2.9 km/h (1.8 mph) reported[1],0,1,0,0,1
+198,"Sunny, warm",1,0,0,0,0
+199,"Rain, Wet Track",0,0,0,1,0
+200,Sunny,1,0,0,0,0
+201,Cloudy but dry,0,0,1,0,1
+202,"Cloudy, hot, dry; 30 °C (86 °F)",0,0,0,0,0
+203,Cold and wet with rain becoming heavier,0,1,0,1,0
+204,Sunny,1,0,0,0,0
+205,"Cloudy, cold, dry",0,0,1,0,0
+206,Fine,1,0,0,0,0
+207,"Partly Cloudy, Dry",0,0,1,0,0
+208,Overcast and dry with temperatures reaching up to 23 °C (73 °F)[1],0,0,1,0,1
+209,"Partially cloudy and dry, with temperatures reaching up to 21 °C (70 °F)[1]",0,0,0,0,1
+210,"Cloudy, Dry, 17 °C",0,0,0,0,0
+211,"Overcast, cold and rain, air temperature 11 °C (52 °F)",0,1,0,0,0
+212,Clear,1,0,0,0,0
+213,Clear and mild with temperatures approaching 22.7 °C (72.9 °F)Wind speeds up to 4.1 km/h (2.5 mph)[1],1,0,0,0,0
+214,"Dry at first, rain in closing stages",0,0,1,1,0
+215,"Sunny, Dry Track",0,0,1,0,0
+216,"Sunny, dry track",0,0,1,0,0
+217,"Sunny, Dry Track, 27°C",0,0,1,0,0
+218,"Wet, then drying out with temperatures reaching up to 28 °C (82 °F)[2]",0,0,0,0,0
+219,Dry with temperatures reaching up to 29 °C (84 °F)[1],0,0,1,0,0
+220,Sunny,1,0,0,0,0
+221,"Partially cloudy, mild and dry",1,0,1,0,0
+222,Sunny[3],0,0,0,0,0
+223,Sunny with temperatures reaching up to 25 °C (77 °F)[3],1,0,0,0,0
+224,Dry with temperatures reaching up to 23 °C (73 °F)[1],0,0,1,0,0
+225,"Thunderstorm, then drying with temperatures reaching up to 24 °C (75 °F)[1]",0,0,0,0,0
+226,Dry with temperatures reaching up to 21 °C (70 °F)[1],0,0,1,0,0
+227,"Cloudy, but dry",0,0,1,0,0
+228,Sunny,1,0,0,0,0
+229,"Overcast, mild, wet at first, drying later, light rain at finish",0,0,0,1,0
+230,Rain,0,0,0,1,0
+231,Mostly sunny and warm with temperatures approaching 26 °C (79 °F)[1],1,0,0,0,0
+232,Dry,0,0,1,0,0
+233,Warm and sunny with temperatures reaching up to 25 °C (77 °F)[1],1,0,0,0,0
+234,"Sunny, dry",0,0,1,0,0
+235,Sunny with temperatures reaching up to 27 °C (81 °F)[2],1,0,0,0,0
+236,Overcast and dry with temperatures reaching up to 17 °C (63 °F)[2],0,0,1,0,1
+237,Dry,0,0,1,0,0
+238,Mostly sunny with ambient temperatures reaching 25 °C during the day.,1,0,0,0,0
+239,"Sunny, mild and dry",1,0,1,0,0
+240,Overcast,0,0,0,0,1
+241,Cloudy,0,0,0,0,1
+242,"Heavy rain before the start, before brightening up",0,0,0,1,0
+243,Sunny,1,0,0,0,0
+244,"Warm, sunny",1,0,0,0,0
+245,"Cloudy at start, sunny later with temperatures reaching up to 24.3 °C (75.7 °F)Wind speeds up to 8 km/h (5.0 mph)[1]",1,0,0,0,1
+246,"Cloudy, light drizzle at times",0,0,0,0,0
+247,"Warm, cloudy, windy",0,0,0,0,0
+248,"Sunny, 28 °C (82 °F)",0,0,0,0,0
+249,Sunny,1,0,0,0,0
+250,"Cloudy, then heavy rain",0,0,0,1,0
+251,Sunny,1,0,0,0,0
+252,Sunny,1,0,0,0,0
+253,"Rain, later dried out, air temperature 11 °C (52 °F)",0,0,0,0,0
+254,"Cloudy, dry",0,0,1,0,0
+255,"Rain, later dried out",0,0,0,0,0
+256,Sunny[2],0,0,0,0,0
+257,Sunny,1,0,0,0,0
+258,Sunny,1,0,0,0,0
+259,Sunny,1,0,0,0,0
+260,Sunny,1,0,0,0,0
+261,Sunny,1,0,0,0,0
+262,Temperatures approaching 26.3 °C (79.3 °F);Wind speeds up to 21 km/h (13 mph)[1],0,0,0,0,0
+263,Sunny,1,0,0,0,0
+264,Sunny,1,0,0,0,0
+265,Sunny,1,0,0,0,0
+266,Sunny,1,0,0,0,0
+267,Sunny,1,0,0,0,0
+268,Sunny,1,0,0,0,0
+269,Sunny,1,0,0,0,0
+270,Sunny,1,0,0,0,0
+271,"Heavy rain, followed by light showers",0,0,0,1,0
+272,Sunny with clouds,1,0,0,0,1
+273,"Very hot and humid, with torrential thunderstorms. Air temp: 33 °C (91 °F)",1,0,0,0,0
+274,Dry first then torrential rain for a short period; later drying and staying dry for the rest of the race,0,0,1,1,0
+275,"Very cold, rain with dry spells",0,0,1,1,0
+276,"Wet at start, dry later",0,0,1,1,0
+277,Sunny,1,0,0,0,0
+278,"Partly cloudy, mild, dry",0,0,1,0,0
+279,Temperatures reaching up to 29.0 °C (84.2 °F);Wind speeds up to 18.3 km/h (11.4 mph)[1],0,0,0,0,0
+280,,0,0,0,0,0
+281,Dry,0,0,1,0,0
+282,Dry,0,0,1,0,0
+283,,0,0,0,0,0
+284,Sunny and clear,1,0,0,0,0
+285,Hot and sunny,1,0,0,0,0
+286,"Dry, sunny, windy",0,0,0,0,0
+287,"Dry/wet, warm, cloudy",0,0,0,0,1
+288,Sunny,1,0,0,0,0
+289,"Hot, dry and dull",0,0,1,0,0
+290,Scattered Clouds27 °C (81 °F)[1],0,0,0,0,0
+291,Dry,0,0,1,0,0
+292,"Dry at start, wet later",0,0,1,1,0
+293,Sunny,1,0,0,0,0
+294,Dry,0,0,1,0,0
+295,Dry with temperatures reaching up to 25 °C (77 °F);Wind speeds up to 14 km/h (8.7 mph)[1],0,0,1,0,0
+296,"Dry, then raining",0,0,0,0,0
+297,Dry,0,0,1,0,0
+298,Dry,0,0,1,0,0
+299,Dry,0,0,1,0,0
+300,"Overcast, brief rain mid-race",0,0,0,1,0
+301,Sunny and warm,1,0,0,0,0
+302,"Dry, sunny, windy",0,0,0,0,0
+303,"Dry, warm, cloudy",0,0,0,0,1
+304,Cloudy,0,0,0,0,1
+305,Overcast25 °C (77 °F)[1],0,0,0,0,0
+306,"Cloudy at start, rainy later. Ambient temperature: 29.4°C (85°F).Humidity: 95%.Wind speed: 33.7 km/h (21 mph).",0,0,0,1,1
+307,"Wet at start, dry by finish",0,0,1,1,0
+308,"Cloudy, mild, dry",0,0,1,0,0
+309,Mild with temperatures approaching 25 °C (77 °F);Wind speeds up to 12 km/h (7.5 mph)[1],1,0,0,0,0
+310,Mostly Cloudy24 °C (75 °F)[1],0,0,0,0,0
+311,,0,0,0,0,0
+312,"Hot, dry, sunny",1,0,0,0,0
+313,Hot and sunny,1,0,0,0,0
+314,"Hot dry, sunny",1,0,0,0,0
+315,,0,0,0,0,0
+316,Sunny and warm,1,0,0,0,0
+317,Sunny and warm,1,0,0,0,0
+318,"Warm and overcast, drying",1,0,0,0,0
+319,"Sunny, warm",1,0,0,0,0
+320,Torrential rain,0,0,0,1,0
+321,Cloudy and cool with temperatures reaching up to 18 °C (64 °F)[1],0,1,0,0,1
+322,"Hot, dry, sunny",1,0,0,0,0
+323,"Warm, dry, sunny",1,0,0,0,0
+324,"Warm, dry, sunny",1,0,0,0,0
+325,Warm and cloudy with temperatures approaching 19.8 °C (67.6 °F); wind speeds up to 27.8 kilometres per hour (17.3 mph)[1],1,0,0,0,1
+326,Overcast21 °C (70 °F)[1],0,0,0,0,0
+327,"Hot, dry, sunny",1,0,0,0,0
+328,"Hot, dry, sunny",1,0,0,0,0
+329,"Hot, dry, sunny",1,0,0,0,0
+330,Dry,0,0,1,0,0
+331,Dry,0,0,1,0,0
+332,"Hot, dry, sunny",1,0,0,0,0
+333,,0,0,0,0,0
+334,"Dry, hot, sunny",1,0,0,0,0
+335,Sunny,1,0,0,0,0
+336,Sunny,1,0,0,0,0
+337,Sunny,1,0,0,0,0
+338,Overcast with light rain at start,0,0,0,1,1
+339,"Mainly cloudy, dry",0,0,1,0,0
+340,"Cloudy, rain",0,0,0,1,0
+341,"Mainly cloudy, dry",0,0,1,0,0
+342,"Mainly cloudy, dry",0,0,1,0,0
+343,Air: 28 to 29 °C (82 to 84 °F) Track: 39 to 49 °C (102 to 120 °F),0,0,0,0,0
+344,Warm with temperatures approaching 26 °C (79 °F); wind speeds up to 4.9 kilometres per hour (3.0 mph)[1],1,0,0,0,0
+345,Dry[3],0,0,0,0,0
+346,Mainly sunny,1,0,0,0,0
+347,"Mainly cloudy, dry[4]",0,0,0,0,0
+348,Mainly sunny28 °C (82 °F)[1],0,0,0,0,0
+349,Intermittent rain,0,0,0,1,0
+350,Sunny,1,0,0,0,0
+351,"Clear; Air temp 29 to 30 °C (84 to 86 °F), Track temp 31 °C (88 °F)[5][6]",0,0,0,0,0
+352,Sunny,1,0,0,0,0
+353,"Rain. Air 20 °C (68 °F), Track 18 °C (64 °F)",0,0,0,0,0
+354,Clear; 25 °C (77 °F),0,0,0,0,0
+355,Dry[3] Air Temp 28 °C (82 °F)[3] Track Temp 33 °C (91 °F) dropping to 29 °C (84 °F)[3],0,0,0,0,0
+356,"Very hot, dry, sunny",1,0,0,0,0
+357,"Warm, dry, sunny",1,0,0,0,0
+358,"Warm, dry, sunny",1,0,0,0,0
+359,"Hot, dry, partly sunny 25°C/79°F, 40% Humidity, wind NW-10mph",1,0,0,0,0
+360,"Hot, sunny; temperature up to maximum of 38.3 °C (100.9 °F)[1]",0,0,0,0,0
+361,Cool and rainy with temperatures approaching 24 °C (75 °F); wind speeds up to 17.9 kilometres per hour (11.1 mph)[1],0,1,0,1,0
+362,"Hot, dry, sunny",1,0,0,0,0
+363,"Warm, dry, sunny",1,0,0,0,0
+364,"Warm, cloudy",0,0,0,0,1
+365,Cloudy,0,0,0,0,1
+366,"Wet, cloudy, cool",0,1,0,0,0
+367,"Hot, dry, sunny",1,0,0,0,0
+368,"Hot, dry, sunny",1,0,0,0,0
+369,"Dry, hot, sunny",1,0,0,0,0
+370,"Dry, warm, cloudy",0,0,0,0,1
+371,"Wet, cool",0,1,0,0,0
+372,Cloudy and hot,1,0,0,0,1
+373,"Sunny, warm",1,0,0,0,0
+374,Warm and dry,1,0,1,0,0
+375,Sunny and hot,1,0,0,0,0
+376,Sunny and hot with temperatures up to 29 °C (84 °F); wind speeds up to 19 kilometres per hour (12 mph)[1],1,0,0,0,0
+377,Warm and sunny with temperatures up to 91.9 °F (33.3 °C); wind speeds up to 11.1 miles per hour (17.9 km/h)[1],1,0,0,0,0
+378,Sunny and hot,1,0,0,0,0
+379,Wet and cool,0,1,0,1,0
+380,Wet and cool,0,1,0,1,0
+381,Sunny and hot,1,0,0,0,0
+382,"Warm, dry and overcast",0,0,1,0,1
+383,Sunny and hot,1,0,0,0,0
+384,Sunny and hot,1,0,0,0,0
+385,Sunny and hot,1,0,0,0,0
+386,"Cool and mainly dry, some rain toward the end",0,1,0,1,0
+387,Cloudy and hot,1,0,0,0,1
+388,Sunny,1,0,0,0,0
+389,"Sunny, warm",1,0,0,0,0
+390,Cloudy and cool,0,1,0,0,1
+391,Sunny and warm,1,0,0,0,0
+392,Clear with rain showers later on; temperatures reaching up to 78.1 °F (25.6 °C); wind speeds up to 19.6 miles per hour (31.5 km/h)[1],1,0,0,1,0
+393,Sunny and hot,1,0,0,0,0
+394,Sunny and warm,1,0,0,0,0
+395,,0,0,0,0,0
+396,Dry,0,0,1,0,0
+397,Dry,0,0,1,0,0
+398,Dry,0,0,1,0,0
+399,Dry,0,0,1,0,0
+400,Sunny and hot,1,0,0,0,0
+401,Sunny and hot,1,0,0,0,0
+402,Dry,0,0,1,0,0
+403,Sunny,1,0,0,0,0
+404,"Hot, dry and sunny",1,0,1,0,0
+405,"Warm, dry and sunny",1,0,1,0,0
+406,"Overcast, warm",1,0,0,0,0
+407,"Sunny, mild, dry",0,0,1,0,0
+408,Dry,0,0,1,0,0
+409,Dry with temperatures approaching 25 °C (77 °F); wind speeds up to 20.5 km/h (12.7 mph)[1],0,0,1,0,0
+410,Cloudy and hot with temperatures reaching up to 91 °F (33 °C); wind speeds up to 23 miles per hour (37 km/h)[1],1,0,0,0,1
+411,Dry,0,0,1,0,0
+412,Sunny,1,0,0,0,0
+413,Dry,0,0,1,0,0
+414,,0,0,0,0,0
+415,Dry,0,0,1,0,0
+416,Dry,0,0,1,0,0
+417,Dry,0,0,1,0,0
+418,Sunny and hot,1,0,0,0,0
+419,Sunny,1,0,0,0,0
+420,"Dry, 34 °C (93 °F) air temperature",0,0,0,0,0
+421,"Overcast, Cold, Rain",0,0,0,1,0
+422,,0,0,0,0,0
+423,Dry,0,0,1,0,0
+424,Sunny with temperatures approaching 20.5 °C (68.9 °F); wind speeds up to 12.9 kilometres per hour (8.0 mph)[1],1,0,0,0,0
+425,Clear and cool with temperatures reaching up to 80.1 °F (26.7 °C); wind speeds up to 23 miles per hour (37 km/h)[1],1,1,0,0,0
+426,"Dry, hot[2]",0,0,0,0,0
+427,"Cool, overcast",0,0,0,0,1
+428,Dry,0,0,1,0,0
+429,Dry,0,0,1,0,0
+430,Sunny,1,0,0,0,0
+431,Dry,0,0,1,0,0
+432,"Wet/Dry, drying up in later stages",0,0,0,0,0
+433,,0,0,0,0,0
+434,Dry,0,0,1,0,0
+435,Sunny,1,0,0,0,0
+436,Dry,0,0,1,0,0
+437,Dry,0,0,1,0,0
+438,,0,0,0,0,0
+439,,0,0,0,0,0
+440,Dry,0,0,1,0,0
+441,Heavy rain and spray,0,0,0,1,0
+442,Dry with temperatures approaching 26 °C (79 °F); wind speeds up to 12.9 kilometres per hour (8.0 mph)[1],0,0,1,0,0
+443,Sunny and warm with temperatures reaching up to 77.9 °F (25.5 °C); wind speeds up to 11.3 miles per hour (18.2 km/h)[1],1,0,0,0,0
+444,Sunny with temperatures reaching up to 100 °F (38 °C); wind speeds approaching speeds up to 14 miles per hour (23 km/h)[1],1,0,0,0,0
+445,,0,0,0,0,0
+446,Dry,0,0,1,0,0
+447,Dry,0,0,1,0,0
+448,Sunny,1,0,0,0,0
+449,Dry,0,0,1,0,0
+450,Sunny,1,0,0,0,0
+451,Dry,0,0,1,0,0
+452,Dry,0,0,1,0,0
+453,Sunny and warm with temperatures reaching up to 65.8 °F (18.8 °C); wind speeds approaching speeds up to 9.9 miles per hour (15.9 km/h)[1],1,0,0,0,0
+454,"Dry, grey and cool[1]",0,0,0,0,1
+455,,0,0,0,0,0
+456,Wet track at the start,0,0,0,1,0
+457,,0,0,0,0,0
+458,Sunny and warm with temperatures reaching up to 76.8 °F (24.9 °C); wind speeds up to 11.3 miles per hour (18.2 km/h)[1],1,0,0,0,0
+459,Warm with temperatures approaching 30 °C (86 °F); wind speeds up to 15 kilometres per hour (9.3 mph)[1],1,0,0,0,0
+460,,0,0,0,0,0
+461,Dry,0,0,1,0,0
+462,Dry,0,0,1,0,0
+463,Cloudy,0,0,0,0,1
+464,Dry,0,0,1,0,0
+465,Dry,0,0,1,0,0
+466,Dry,0,0,1,0,0
+467,Dry,0,0,1,0,0
+468,Dry,0,0,1,0,0
+469,Clear and warm with temperatures reaching up to 63.9 °F (17.7 °C); wind speeds approaching speeds up to 11.8 miles per hour (19.0 km/h)[1],1,0,0,0,0
+470,,0,0,0,0,0
+471,Cold with air temperatures reaching up to 13 °C (55 °F)[1],0,1,0,0,0
+472,"Dry, then Wet",0,0,0,1,0
+473,Sunny and warm with temperatures reaching up to 72 °F (22 °C); wind speeds up to 16.1 miles per hour (25.9 km/h)[1],1,0,0,0,0
+474,Overcast and chilly17 °C (63 °F)[1],0,0,0,0,1
+475,Cloudy,0,0,0,0,1
+476,,0,0,0,0,0
+477,Dry,0,0,1,0,0
+478,Dry,0,0,1,0,0
+479,"Sunny, hot",1,0,0,0,0
+480,Dry,0,0,1,0,0
+481,Dry,0,0,1,0,0
+482,Sunny with temperatures reaching up to 98.8 °F (37.1 °C); wind speeds approaching speeds up to 18.1 miles per hour (29.1 km/h)[1],1,0,0,0,0
+483,Sunny and warm with temperatures reaching up to 71.1 °F (21.7 °C); wind speeds approaching 10.9 miles per hour (17.5 km/h)[1],1,0,0,0,0
+484,"Overcast, Fresh, Rain",0,0,0,1,0
+485,"Sunny, dry",0,0,1,0,0
+486,"Rain, cold",0,1,0,0,0
+487,"Dry, then wet at the end",0,0,0,1,0
+488,Dry,0,0,1,0,0
+489,"Sunny, hot",1,0,0,0,0
+490,"Dry, then wet at half distance, then dry again",0,0,1,1,0
+491,Dry,0,0,1,0,0
+492,Wet / Dry,0,0,1,1,0
+493,"Mild, Dry",0,0,1,0,0
+494,"Sunny, dry",0,0,1,0,0
+495,Dry and sunny,1,0,1,0,0
+496,Wet and cold with temperatures up to 20 °C (68 °F); wind speeds up to 15 kilometres per hour (9.3 mph)[1],0,1,0,1,0
+497,Sunny with temperatures reaching up to 75 °F (24 °C); wind speeds approaching speeds up to 11.1 miles per hour (17.9 km/h)[1],1,0,0,0,0
+498,"Sunny, Very hot, Dry",0,0,1,0,0
+499,Dry,0,0,1,0,0
+500,Dry,0,0,1,0,0
+501,Sunny and warm with temperatures reaching up to 81 °F (27 °C); wind speeds up to 10.9 miles per hour (17.5 km/h)[1],1,0,0,0,0
+502,Dry,0,0,1,0,0
+503,"Dry at the start, damp in the end",0,0,1,1,0
+504,Dry,0,0,1,0,0
+505,,0,0,0,0,0
+506,"Overcast, Dry",0,0,1,0,0
+507,"Mild, Dry",0,0,1,0,0
+508,"Sunny, Mild, Dry",0,0,1,0,0
+509,"Sunny, Mild, Dry",0,0,1,0,0
+510,Cold and dry with temperatures reaching up to 11 °C (52 °F); wind speeds up to 15.9 kilometres per hour (9.9 mph)[1],0,1,1,0,0
+511,Cloudy and dry with temperatures reaching up to 12 °C (54 °F);Wind speeds up to 14.82 km/h (9.21 mph)[1],0,0,1,0,1
+512,Dry,0,0,1,0,0
+513,Dry,0,0,1,0,0
+514,Wet,0,0,0,1,0
+515,Sunny and warm with temperatures reaching up to 66 °F (19 °C); winds gusting up to 8 miles per hour (13 km/h)[1],1,0,0,0,0
+516,Dry,0,0,1,0,0
+517,Dry,0,0,1,0,0
+518,Dry,0,0,1,0,0
+519,Dry,0,0,1,0,0
+520,Dry,0,0,1,0,0
+521,Dry,0,0,1,0,0
+522,Dry,0,0,1,0,0
+523,Dry,0,0,1,0,0
+524,Dry and sunny,1,0,1,0,0
+525,"Partially cloudy, mild and dry with temperatures reaching up to 21 °C (70 °F); wind speeds up to 18.3 kilometres per hour (11.4 mph)[1]",1,0,1,0,0
+526,Rain with temperatures reaching a maximum of 15 °C (59 °F);Wind speeds up to 27.78 km/h (17.26 mph)[1],0,0,0,1,0
+527,Dry,0,0,1,0,0
+528,"Very hot and humid, 100.4°F (38°C)[1]",1,0,0,0,0
+529,Dry,0,0,1,0,0
+530,Scattered clouds 17 °C (63 °F)[1],0,0,0,0,1
+531,Dry,0,0,1,0,0
+532,Dry,0,0,1,0,0
+533,Dry,0,0,1,0,0
+534,Sunny and warm,1,0,0,0,0
+535,Dry,0,0,1,0,0
+536,Dry,0,0,1,0,0
+537,Dry,0,0,1,0,0
+538,Wet,0,0,0,1,0
+539,Dry,0,0,1,0,0
+540,Sunny,1,0,0,0,0
+541,"Cloudy, dry",0,0,1,0,0
+542,Mostly cloudy5 °C (41 °F)[1],0,0,0,0,0
+543,Dry,0,0,1,0,0
+544,Dry,0,0,1,0,0
+545,Sunny,1,0,0,0,0
+546,Sunny with temperatures reaching up to 68 °F (20 °C); winds gusting up to 10.9 miles per hour (17.5 km/h)[1],1,0,0,0,0
+547,,0,0,0,0,0
+548,Dry,0,0,1,0,0
+549,Wet,0,0,0,1,0
+550,Dry,0,0,1,0,0
+551,Dry,0,0,1,0,0
+552,Sunny,1,0,0,0,0
+553,Dry,0,0,1,0,0
+554,"Wet, then drying",0,0,0,0,0
+555,Dry,0,0,1,0,0
+556,Dry,0,0,1,0,0
+557,Rain with temperatures reaching up to 17 °C (63 °F);Winds gusting up to 23.69 km/h (14.72 mph)[1],0,0,0,1,0
+558,Cold with temperatures approaching 12 °C (54 °F); wind speeds up to 12.8 kilometres per hour (8.0 mph)[1],0,1,0,0,0
+559,Dry,0,0,1,0,0
+560,Sunny,1,0,0,0,0
+561,Sunny,1,0,0,0,0
+562,Hot and sunny with temperatures reaching up to 70 °F (21 °C); wind speeds approaching speeds up to 15 miles per hour (24 km/h)[2],1,0,0,0,0
+563,,0,0,0,0,0
+564,,0,0,0,0,0
+565,Dry,0,0,1,0,0
+566,Dry,0,0,1,0,0
+567,,0,0,0,0,0
+568,Dry,0,0,1,0,0
+569,"Rain at start, later drying",0,0,0,1,0
+570,,0,0,0,0,0
+571,"Warm, dry",0,0,1,0,0
+572,,0,0,0,0,0
+573,Mild with temperatures approaching 22 °C (72 °F); wind speeds up to 8.9 kilometres per hour (5.5 mph)[2],1,0,0,0,0
+574,Sunny with temperatures reaching up to 16 °C (61 °F);Winds gusting up to 44.45 km/h (27.62 mph)[2],1,0,0,0,0
+575,"Very wet and misty, eventually drying",0,0,0,1,0
+576,Hot and sunny,1,0,0,0,0
+577,"Sunny, hot and dry",1,0,1,0,0
+578,Sunny,1,0,0,0,0
+579,Sunny,1,0,0,0,0
+580,"Rain, later drying",0,0,0,0,0
+581,Dry and sunny,1,0,1,0,0
+582,Dry,0,0,1,0,0
+583,"Wet, drying later",0,0,0,0,0
+584,Dry and sunny,1,0,1,0,0
+585,"Sunny, then overcast, then heavy rain",0,0,0,1,0
+586,Dry and sunny,1,0,1,0,0
+587,Heavy rain,0,0,0,1,0
+588,Dry and sunny,1,0,1,0,0
+589,Partly sunny with temperatures reaching a maximum of 20.6 °C (69.1 °F);Winds gusting up to 31.48 km/h (19.56 mph)[1],1,0,0,0,0
+590,Hot and sunny,1,0,0,0,0
+591,"Hot and partially cloudy in the first phase, then seasonal monsoon later.",1,0,0,0,1
+592,,0,0,0,0,0
+593,,0,0,0,0,0
+594,,0,0,0,0,0
+595,,0,0,0,0,0
+596,,0,0,0,0,0
+597,,0,0,0,0,0
+598,,0,0,0,0,0
+599,,0,0,0,0,0
+600,"Overcast, showers",0,0,0,1,0
+601,,0,0,0,0,0
+602,,0,0,0,0,0
+603,Cold with temperatures approaching 13.3 °C (55.9 °F); wind speeds up to 15 kilometres per hour (9.3 mph)[1],0,1,0,0,0
+604,"Clear, warm",1,0,0,0,0
+605,,0,0,0,0,0
+606,Sunny and hot,1,0,0,0,0
+607,"Sunny, Hot, Dry",0,0,1,0,0
+608,"Sunny, Hot, Dry",0,0,1,0,0
+609,"Warm, dry",0,0,1,0,0
+610,,0,0,0,0,0
+611,,0,0,0,0,0
+612,Sunny and warm,1,0,0,0,0
+613,Dry,0,0,1,0,0
+614,Dry,0,0,1,0,0
+615,Dry,0,0,1,0,0
+616,,0,0,0,0,0
+617,,0,0,0,0,0
+618,Mild with temperatures approaching 22.2 °C (72.0 °F); wind speeds up to 11.8 kilometres per hour (7.3 mph)[1],1,0,0,0,0
+619,Cloudy with temperatures approaching 20 °C (68 °F);Wind speeds up to 14.82 km/h (9.21 mph)[1],0,0,0,0,1
+620,,0,0,0,0,0
+621,"Sunny, Hot, Dry",0,0,1,0,0
+622,,0,0,0,0,0
+623,Wet,0,0,0,1,0
+624,,0,0,0,0,0
+625,,0,0,0,0,0
+626,"Warm, dry",0,0,1,0,0
+627,,0,0,0,0,0
+628,"Sunny, hot",1,0,0,0,0
+629,Dry and sunny,1,0,1,0,0
+630,Mild with temperatures approaching 22.8 °C (73.0 °F); wind speeds up to 12 kilometres per hour (7.5 mph)[1],1,0,0,0,0
+631,"Sunny at start, brief showers late",1,0,0,1,0
+632,"Sunny, Hot, Dry",0,0,1,0,0
+633,"Sunny, Hot, Dry",0,0,1,0,0
+634,Overcast,0,0,0,0,1
+635,Wet,0,0,0,1,0
+636,,0,0,0,0,0
+637,"Overcast, dry",0,0,1,0,0
+638,,0,0,0,0,0
+639,Dry,0,0,1,0,0
+640,,0,0,0,0,0
+641,Rainy and foggy with temperatures approaching 17.8 °C (64.0 °F); wind speeds up to 8 kilometres per hour (5.0 mph)[1],0,0,0,1,0
+642,Dry,0,0,1,0,0
+643,"Very hot, Dry",0,0,1,0,0
+644,"Very hot, Dry",0,0,1,0,0
+645,Sunny and warm,1,0,0,0,0
+646,,0,0,0,0,0
+647,Cloudy,0,0,0,0,1
+648,Overcast,0,0,0,0,1
+649,,0,0,0,0,0
+650,,0,0,0,0,0
+651,,0,0,0,0,0
+652,"Sunny, Dry",0,0,1,0,0
+653,Mild with temperatures approaching 23.3 °C (73.9 °F); winds gusting up to 10.1 kilometres per hour (6.3 mph)[1],1,0,0,0,0
+654,Cloudy and dry with temperatures reaching up to 10 °C (50 °F);Wind speeds up to 29.5 km/h (18.3 mph)[1],0,0,1,0,1
+655,,0,0,0,0,0
+656,"Hot, Dry",0,0,1,0,0
+657,"Sunny, mild, dry",0,0,1,0,0
+658,"Overcast, mild, dry",0,0,1,0,0
+659,"Sunny, mild, dry",0,0,1,0,0
+660,"Sunny, mild, dry",0,0,1,0,0
+661,"Overcast, dry",0,0,1,0,0
+662,,0,0,0,0,0
+663,"Sunny, Dry",0,0,1,0,0
+664,Mild with temperatures approaching 21.1 °C (70.0 °F); wind speeds up to 10.1 kilometres per hour (6.3 mph)[1],1,0,0,0,0
+665,Dry with temperatures reaching up to 18 °C (64 °F);Wind speeds up to 18.70 km/h (11.62 mph)[1],0,0,1,0,0
+666,Warm and dry,1,0,1,0,0
+667,"Very hot, dry",0,0,1,0,0
+668,"Hot, Dry",0,0,1,0,0
+669,"Sunny, Mild, Dry",0,0,1,0,0
+670,"Overcast, Dry",0,0,1,0,0
+671,Showers,0,0,0,1,0
+672,Wet,0,0,0,1,0
+673,"Hot, Dry",0,0,1,0,0
+674,"Hazy, Wet",0,0,0,1,0
+675,"Hot, Dry",0,0,1,0,0
+676,Sunny with temperatures reaching up to 27.8 °C (82.0 °F) and wind speeds up to 10.1 kilometres per hour (6.3 mph); no precipitation reported throughout the day[1],1,0,0,0,0
+677,Temperatures reaching a maximum of 20 °C (68 °F);wind speeds up to 14.82 km/h (9.21 mph)[1],0,0,0,0,0
+678,"Sunny, Mild, Dry",0,0,1,0,0
+679,,0,0,0,0,0
+680,,0,0,0,0,0
+681,,0,0,0,0,0
+682,,0,0,0,0,0
+683,,0,0,0,0,0
+684,,0,0,0,0,0
+685,"Warm, dry and sunny",1,0,1,0,0
+686,Rainy with temperatures up to 24.4 °C (75.9 °F); wind speeds up to 8 kilometres per hour (5.0 mph)[1],0,0,0,1,0
+687,"Warm, dry",0,0,1,0,0
+688,Sunny,1,0,0,0,0
+689,,0,0,0,0,0
+690,"Overcast, Mild, Dry",0,0,1,0,0
+691,Overcast and wet,0,0,0,1,1
+692,"Hot, dry",0,0,1,0,0
+693,"Wet, drying later",0,0,0,0,0
+694,"Sunny, Mild, Dry",0,0,1,0,0
+695,Overcast and wet,0,0,0,1,1
+696,"Warm, dry and sunny",1,0,1,0,0
+697,"Cool, dry",0,0,1,0,0
+698,"Warm, clear",1,0,0,0,0
+699,,0,0,0,0,0
+700,,0,0,0,0,0
+701,Heavy rain,0,0,0,1,0
+702,Sunny,1,0,0,0,0
+703,"Warm, dry and overcast",0,0,1,0,1
+704,,0,0,0,0,0
+705,Overcast and dry,0,0,1,0,1
+706,,0,0,0,0,0
+707,"Rainy, windy, cold",0,1,0,0,0
+708,,0,0,0,0,0
+709,,0,0,0,0,0
+710,Dry,0,0,1,0,0
+711,Dry,0,0,1,0,0
+712,Dry,0,0,1,0,0
+713,"Warm, dry",0,0,1,0,0
+714,Dry,0,0,1,0,0
+715,Dry,0,0,1,0,0
+716,Dry,0,0,1,0,0
+717,"Sunny, warm",1,0,0,0,0
+718,,0,0,0,0,0
+719,"Warm, dry and sunny",1,0,1,0,0
+720,Wet and overcast,0,0,0,1,1
+721,Sunny,1,0,0,0,0
+722,"Sunny, then rain",0,0,0,1,0
+723,"Warm, dry and sunny",1,0,1,0,0
+724,"Warm, dry and sunny, 21C.",0,0,1,0,0
+725,"Warm, dry and sunny",1,0,1,0,0
+726,Sunny,1,0,0,0,0
+727,"Overcast, dry",0,0,1,0,0
+728,"Hot, dry and windy",0,0,1,0,0
+729,Sunny,1,0,0,0,0
+730,Cloudy,0,0,0,0,1
+731,Sunny,1,0,0,0,0
+732,Sunny,1,0,0,0,0
+733,Sunny,1,0,0,0,0
+734,Heavy rain showers,0,0,0,1,0
+735,"Dry, with rain later",0,0,0,1,0
+736,Sunny,1,0,0,0,0
+737,"Dry, windy",0,0,0,0,0
+738,Sunny,1,0,0,0,0
+739,Sunny,1,0,0,0,0
+740,Sunny,1,0,0,0,0
+741,Sunny,1,0,0,0,0
+742,"Torrential rain, drying later",0,0,0,0,0
+743,Wet,0,0,0,1,0
+744,Sunny,1,0,0,0,0
+745,Temperatures up to 22 °C (72 °F);Wind speeds up to 16.48 km/h (10.24 mph)[1],0,0,0,0,0
+746,Dry,0,0,1,0,0
+747,,0,0,0,0,0
+748,,0,0,0,0,0
+749,,0,0,0,0,0
+750,,0,0,0,0,0
+751,Dry,0,0,1,0,0
+752,"Dry, overcast.",0,0,0,0,0
+753,,0,0,0,0,0
+754,"Warm, dry",0,0,1,0,0
+755,Temperatures up to 24.4 °C (75.9 °F);Wind speeds up to 18.33 km/h (11.39 mph)[1],0,0,0,0,0
+756,"Hot, clear",1,0,0,0,0
+757,,0,0,0,0,0
+758,Sunny,1,0,0,0,0
+759,"Hot, dry",0,0,1,0,0
+760,Dry and sunny.,0,0,1,0,0
+761,Dry and dull.,0,0,1,0,0
+762,Hot and clear.,1,0,0,0,0
+763,Dry and sunny,1,0,1,0,0
+764,Sunny with temperatures reaching up to 25 °C (77 °F);Winds speeds up to 25.93 km/h (16.11 mph)[1],1,0,0,0,0
+765,,0,0,0,0,0
+766,,0,0,0,0,0
+767,,0,0,0,0,0
+768,,0,0,0,0,0
+769,"Hot, dry",0,0,1,0,0
+770,,0,0,0,0,0
+771,,0,0,0,0,0
+772,,0,0,0,0,0
+773,,0,0,0,0,0
+774,,0,0,0,0,0
+775,"Warm, dry, sunny",1,0,0,0,0
+776,,0,0,0,0,0
+777,,0,0,0,0,0
+778,"Slightly overcast, dry track",0,0,1,0,0
+779,,0,0,0,0,0
+780,"Overcast, dry.",0,0,0,0,0
+781,,0,0,0,0,0
+782,"Sunny, very hot, dry",0,0,1,0,0
+783,,0,0,0,0,0
+784,Overcast but dry,0,0,1,0,1
+785,"Warm, dry, sunny",1,0,0,0,0
+786,"Overcast, dry track",0,0,1,0,0
+787,"Wet and overcast, later drying",0,0,0,1,0
+788,,0,0,0,0,0
+789,"Overcast, dry",0,0,1,0,0
+790,,0,0,0,0,0
+791,"Cloudy, warm, alternating light rain",0,0,0,1,0
+792,Very hot and dry,1,0,1,0,0
+793,,0,0,0,0,0
+794,Cool and windy,0,1,0,0,0
+795,,0,0,0,0,0
+796,Drizzly,0,0,0,0,0
+797,"Hot, dry.[1]",0,0,0,0,0
+798,,0,0,0,0,0
+799,"Overcast, wet",0,0,0,1,0
+800,Very hot and sunny,1,0,0,0,0
+801,"Sunny, mild, dry",0,0,1,0,0
+802,"Overcast, wet",0,0,0,1,0
+803,"Cold, wet (heavy rain).[1]",0,0,0,1,0
+804,"Sunny, dry",0,0,1,0,0
+805,Rain,0,0,0,1,0
+806,"Sunny, mild, dry",0,0,1,0,0
+807,"Sunny, mild, dry",0,0,1,0,0
+808,"Hot, dry",0,0,1,0,0
+809,Extremely hot,1,0,0,0,0
+810,"Sunny, mild, dry",0,0,1,0,0
+811,"Hot, dry",0,0,1,0,0
+812,"Hot, dry",0,0,1,0,0
+813,"Overcast, showers",0,0,0,1,0
+814,"Sunny, mild, dry",0,0,1,0,0
+815,"Sunny, mild, dry",0,0,1,0,0
+816,"Sunny, mild, dry",0,0,1,0,0
+817,Sunny,1,0,0,0,0
+818,Warm and sunny,1,0,0,0,0
+819,Rain,0,0,0,1,0
+820,Rain,0,0,0,1,0
+821,"Overcast, dry.",0,0,0,0,0
+822,Sunny,1,0,0,0,0
+823,Rainy,0,0,0,1,0
+824,Sunny,1,0,0,0,0
+825,"Overcast, rain",0,0,0,1,0
+826,Warm and sunny,1,0,0,0,0
+827,"Sunny, Mild, Dry",0,0,1,0,0
+828,"Sunny, Hot, Dry",0,0,1,0,0
+829,"Mild, Dry",0,0,1,0,0
+830,"Sunny, Mild, Dry",0,0,1,0,0
+831,Warm and sunny,1,0,0,0,0
+832,"Hot, Dry",0,0,1,0,0
+833,"Sunny, mild, dry.",0,0,0,0,0
+834,,0,0,0,0,0
+835,Rainy,0,0,0,1,0
+836,"Warm, dry and sunny",1,0,1,0,0
+837,"Warm, dry and sunny",1,0,1,0,0
+838,Hot and sunny,1,0,0,0,0
+839,"Warm, hot and sunny",1,0,0,0,0
+841,"Sunny, 18°C",0,0,0,0,0
+842,"Cloudy, dry",0,0,1,0,0
+843,Fine and Dry[1] Air Temp 22 °C (72 °F)[1] Track Temp 32 °C (90 °F) dropping to 26 °C (79 °F)[1],1,0,0,0,0
+844,"Sunny, Fine and Dry[2] Air Temp 17 °C (63 °F)[2] Track Temp 35 °C (95 °F) dropping to 30 °C (86 °F)[2]",1,0,0,0,0
+845,"Mainly sunny, Fine and Dry[3][4] Air Temp 27 °C (81 °F)[4] Track Temp 33 °C (91 °F) to 44 °C (111 °F)[4]",1,0,0,0,0
+846,"Sunny, Fine and Dry[2]Air Temp 24 °C (75 °F)[2]Track Temp 44 °C (111 °F)[2]",1,0,0,0,0
+847,"Wet at start, very heavy rain later, after rain stops, track drying towards the end. Temperatures up to 27 °C (81 °F); wind speeds up to 12 kilometres per hour (7.5 mph)[2]",0,0,0,1,0
+848,"Clear, Fine and Dry[1][2] Air Temp 27 °C (81 °F)[2] Track Temp 47 °C (117 °F)[2]",1,0,0,0,0
+849,Wet track at start; subsequently drying.[1]Air Temp 20 °C (68 °F)[1]Track Temp 22 °C (72 °F)[1],0,0,0,1,0
+850,"Cloudy, (light) rain at start",0,0,0,1,0
+851,"Cloudy, rain showers",0,0,0,1,0
+852,"Cloudy, dry",0,0,1,0,0
+853,Mainly sunny,1,0,0,0,0
+854,Hot and humid Air Temp 31 °C (88 °F)[1],1,0,0,0,0
+855,Sunny and dry Air Temp 24 °C (75 °F)[3],1,0,1,0,0
+856,"Dry, light rain at the start Air Temp 21 °C (70 °F)[2]",0,0,0,1,0
+857,Fine and Dry Air Temp 30 °C (86 °F)[1],1,0,1,0,0
+858,Fine and Dry Air Temp 25 °C (77 °F)[1],1,0,1,0,0
+859,Fine Air Temp 24 °C (75 °F) Track Temp 43 °C (109 °F)[1],1,0,0,0,0
+860,Fine[1] Air Temp 22 °C (72 °F)[1] Track Temp 30 °C (86 °F) dropping to 22 °C (72 °F)[1],0,0,0,0,0
+861,Heavy rain clearing to cloudy and dry[2] Air Temp 26 °C (79 °F)[2]  Track Temp 29 °C (84 °F) dropping to 24 °C (75 °F) [2],0,0,0,1,1
+862,Overcast but Dry[1] Air Temp 22 °C (72 °F)[1] Track Temp 23 °C (73 °F)[1],0,0,0,0,1
+863,Sunny and hot[1][2] Air Temp 27 °C (81 °F)[2] Track Temp 33 °C (91 °F) dropping to 29 °C (84 °F)[2],1,0,0,0,0
+864,"Partially cloudy, dry: Air 23 °C (73 °F), Track 36 °C (97 °F)",0,0,0,0,0
+865,"Fine and Dry, showers threatening at end[2] Air Temp 21 °C (70 °F)[2] Track Temp 38 °C (100 °F) dropping to 31 °C (88 °F)[2]",1,0,0,1,0
+866,"Fine, dry and warm;[2] with air temperature approaching 29 °C (84 °F)[2] Track Temp 45 °C (113 °F) dropping to 39 °C (102 °F)[2]",0,0,1,0,0
+867,Fine and Dry[2] Air Temp 27 °C (81 °F)[2] Track Temp 45 °C (113 °F)[2],1,0,0,0,0
+868,DryAir Temp 20 °C (68 °F)[2]Track Temp 31 °C (88 °F)[2],0,0,0,0,0
+869,Fine and Dry[2] Air Temp 22 °C (72 °F)[2] Track Temp 30 °C (86 °F)[2],1,0,0,0,0
+870,Fine and Dry. Very Hot[2][3] Air Temp 30 °C (86 °F)[3] Track Temp 45 °C (113 °F)[3],1,0,0,0,0
+871,Fine and Dry[4] Air Temp 23 °C (73 °F)[4] Track Temp 33 °C (91 °F)[4],1,0,0,0,0
+872,Dry and sizzlingly sunny[2] Air temp 28 °C (82 °F)[2] Track temp 40 °C (104 °F)[2],0,0,1,0,0
+873,Hot and humid[2]Air Temp 29 °C (84 °F)[2]Track Temp 31 °C (88 °F)[2],1,0,0,0,0
+874,Fine and Dry[2] Air Temp 23 °C (73 °F)[2] Track Temp 32 °C (90 °F)[2],1,0,0,0,0
+875,Fine and Dry[3] Air Temp 21 °C (70 °F)[3] Track Temp 27 °C (81 °F) dropping to 23 °C (73 °F)[3],1,0,0,0,0
+876,"Fine, Dry, a little hazy and a little dusty[2] Air Temp 30 °C (86 °F)[2] Track Temp 36 °C (97 °F) dropping to 31 °C (88 °F)[2]",0,0,0,0,0
+877,Dry[2] Air Temp 29 °C (84 °F)[2] Track Temp 34 °C (93 °F) dropping to 29 °C (84 °F)[2],0,0,0,0,0
+878,Scattered clouds[2][3]Air temp 24 °C (75 °F)[3]Track temp 32 °C (90 °F)[3],0,0,0,0,0
+879,"Race start: drops of rain, light rain shower getting heavier at the end.[2] Air Temp 19 °C (66 °F)[2] Track Temp 21 °C (70 °F)[2]",0,0,0,1,0
+880,"Scattered Clouds, Fine and Dry[2] Air Temp 18 °C (64 °F)[2] Track Temp 25 °C (77 °F) dropping to 19 °C (66 °F)[2]",1,0,0,0,0
+881,Light rain clearing to cloudy and dry,0,0,1,1,1
+882,Cloudy,0,0,0,0,1
+883,Sunny,1,0,0,0,0
+884,Sunny,1,0,0,0,0
+885,Warm and sunny,1,0,0,0,0
+886,Mild with temperatures approaching 23 °C (73 °F); wind speeds up to 15 kilometres per hour (9.3 mph)[2],1,0,0,0,0
+887,Dry,0,0,1,0,0
+888,Sunny,1,0,0,0,0
+890,"Very hot and sunny, 35°C.",1,0,0,0,0
+891,Cloudy,0,0,0,0,1
+892,Cloudy,0,0,0,0,1
+893,Dry and 29 degrees,0,0,1,0,0
+894,Cloudy with maximum temperatures reaching 29 degrees during the day,0,0,0,0,1
+895,Warm and sunny,1,0,0,0,0
+896,"Sunny, haze",0,0,0,0,0
+897,Clear,1,0,0,0,0
+898,"Partly cloudy, warmTemperatures reaching up to 89.1 °F (31.7 °C); wind speeds approaching speeds of 11.1 miles per hour (17.9 km/h)[2]",0,0,0,0,0
+899,"Cloudy, Air Temp: 18°C",0,0,0,0,0
+900,"Overcast, 19 °C(66 °F)",0,0,0,0,0
+901,"Dry, 32°C",0,0,0,0,0
+902,Dry,0,0,1,0,0
+903,"Mostly cloudy, dry",0,0,1,0,0
+904,Sunny,1,0,0,0,0
+905,"Overcast, Air: 20 to 21 °C (68 to 70 °F), Track: 28 to 30 °C (82 to 86 °F).",0,0,0,0,0
+906,Temperatures up to 27.6 °C (81.7 °F); wind speeds up to 16.4 kilometres per hour (10.2 mph)[5],0,0,0,0,0
+907,"Partially cloudy, hot and dry",1,0,1,0,0
+908,Mostly cloudy with maximum temperatures reaching 21 degrees during the day.,0,0,0,0,1
+909,Cloudy with maximum temperatures reaching 26 degrees during the day.,0,0,0,0,1
+910,"Overcast. Wet track at start, then drying.Scattered thunderstorms during the day, temperatures reaching a maximum of 26 degrees.[1]",0,0,0,1,0
+911,Mostly cloudy,0,0,0,0,1
+912,"Sunny; Air: 25 °C (77 °F), Track: 37 to 42 °C (99 to 108 °F)",0,0,0,0,0
+913,Clear. Air: 28 to 30 °C (82 to 86 °F) Track: 33 to 37 °C (91 to 99 °F).,0,0,0,0,0
+914,Rain. Air: 20 °C (68 °F) Track: 24 °C (75 °F),0,0,0,0,0
+915,"Fine and dry;21 °C (70 °F) ambient temperature,33 °C (91 °F) track temperature[4]",1,0,0,0,0
+916,Sunny,1,0,0,0,0
+917,"Sunny, Air: 23 to 24 °C (73 to 75 °F), Track: 46 to 50 °C (115 to 122 °F)",0,0,0,0,0
+918,"Clear skies; Air temp: 30 °C (86 °F) during the day, dropping to 24 °C (75.2 °F). Wind speed: 8 km/h (4.9 mph).[2] (Night race)",1,0,0,0,0
+931,Partly cloudy18–19 °C (64–66 °F) air temperature31–37 °C (88–99 °F) track temperature1.5 m/s (4.9 ft/s) wind from the west[2],0,0,0,0,0
+932,Sunny20–21 °C (68–70 °F) air temperature39 °C (102 °F) track temperature4 m/s (13 ft/s) wind from the north[2],0,0,0,0,0
+929,"Sunny, clear24–26 °C (75–79 °F) air temperature28–31 °C (82–88 °F) track temperature1.5 m/s (4.9 ft/s) wind from the north[1]",0,0,0,0,0
+930,Sunny25 °C (77 °F) air temperature44 °C (111 °F) track temperature1.8 m/s (5.9 ft/s) wind from the northeast[3],0,0,0,0,0
+928,Sunny21 °C (70 °F) air temperature46 °C (115 °F) track temperature1.4 m/s (4.6 ft/s) wind from the northwest[1],0,0,0,0,0
+926,Partly cloudy17–18 °C (63–64 °F) air temperature32–37 °C (90–99 °F) track temperature6 m/s (20 ft/s) wind from the south[3],0,0,0,0,0
+927,Sunny32–33 °C (90–91 °F) air temperature53–58 °C (127–136 °F) track temperature2 m/s (6.6 ft/s) wind from the south[3],0,0,0,0,0
+933,Cloudy14–15 °C (57–59 °F) air temperature27–32 °C (81–90 °F) track temperature2 m/s (6.6 ft/s) wind from the west[2],0,0,0,0,0
+934,"Cloudy, rain at times17–20 °C (63–68 °F) air temperature24–32 °C (75–90 °F) track temperature2.5 m/s (8.2 ft/s) wind from the east[2]",0,0,0,1,0
+936,Sunny22–24 °C (72–75 °F) air temperature41–48 °C (106–118 °F) track temperature3.2 m/s (10 ft/s) wind from the east[2],0,0,0,0,0
+937,Cloudy23 °C (73 °F) air temperature33–37 °C (91–99 °F) track temperature3.5 m/s (11 ft/s) wind from the northwest[2],0,0,0,0,0
+938,Partly cloudy22–23 °C (72–73 °F) air temperature38–39 °C (100–102 °F) track temperature1.5 m/s (4.9 ft/s) wind from changing directions[2],0,0,0,0,0
+939,Dry28–29 °C (82–84 °F) air temperature34–36 °C (93–97 °F) track temperature0.5 m/s (1.6 ft/s) wind from the west[2],0,0,0,0,0
+940,Partly cloudy27 °C (81 °F) air temperature52–54 °C (126–129 °F) track temperature4.5 m/s (15 ft/s) wind from the east[2],0,0,0,0,0
+941,Partly cloudy18 °C (64 °F) air temperature25–27 °C (77–81 °F) track temperature1.5 m/s (4.9 ft/s) wind from the north[2],0,0,0,0,0
+942,Very cloudy17 °C (63 °F) air temperature17–20 °C (63–68 °F) track temperature8 m/s (26 ft/s) wind from the south[2],0,0,0,0,0
+943,Partly cloudy22–24 °C (72–75 °F) air temperature48–56 °C (118–133 °F) track temperature1.5 m/s (4.9 ft/s) wind from the northwest[2],0,0,0,0,0
+944,Dry22–28 °C (72–82 °F) air temperature38–48 °C (100–118 °F) track temperature2.5 m/s (8.2 ft/s) wind from the north[2],0,0,0,0,0
+945,Clear25–27 °C (77–81 °F) air temperature28–29 °C (82–84 °F) track temperature1.5 m/s (4.9 ft/s) wind from the south[3],0,0,0,0,0
+948,Partly cloudy22–23 °C (72–73 °F) air temperature26–36 °C (79–97 °F) track temperature4 m/s (8.9 mph; 14 km/h) wind from the south[4],0,0,0,0,0
+949,Dry21–22 °C (70–72 °F) air temperature26–29 °C (79–84 °F) track temperature2 m/s (6.6 ft/s) wind from the southwest[4],0,0,0,0,0
+950,Sunny21 °C (70 °F) air temperature37 °C (99 °F) track temperature4.8 m/s (16 ft/s) wind from the northeast[4],0,0,0,0,0
+951,Partly cloudy16 °C (61 °F) air temperature37–41 °C (99–106 °F) track temperature2.5 m/s (8.2 ft/s) wind from the southwest[4],0,0,0,0,0
+952,Partly cloudy20–22 °C (68–72 °F) air temperature39–41 °C (102–106 °F) track temperature2 m/s (6.6 ft/s) wind from the north[4],0,0,0,0,0
+953,"Rainy at start, dry later17–18 °C (63–64 °F) air temperature20–22 °C (68–72 °F) track temperature2 m/s (6.6 ft/s) wind from the north[4]",0,0,1,1,0
+954,Cloudy12 °C (54 °F) air temperature21–23 °C (70–73 °F) track temperature2.5 m/s (8.2 ft/s) wind from the southeast[4],0,0,0,0,0
+955,Partly cloudy30–33 °C (86–91 °F) air temperature39–45 °C (102–113 °F) track temperature2.5 m/s (8.2 ft/s) wind from the southeast[4],0,0,0,0,0
+956,Cloudy,0,0,0,0,1
+957,"Wet at start, dry later",0,0,1,1,0
+958,Sunny,1,0,0,0,0
+959,Partially cloudy and dry,0,0,1,0,1
+960,Partially cloudy and dry,0,0,1,0,1
+961,"Sunny, warm",1,0,0,0,0
+962,Clear30 °C (86 °F) air temperature34–35 °C (93–95 °F) track temperature1.5 m/s (4.9 ft/s) wind from the east[2],0,0,0,0,0
+963,Sunny33 °C (91 °F) air temperature49 °C (120 °F) track temperature2.8 m/s (9.2 ft/s) wind from the west[2],0,0,0,0,0
+964,Cloudy,0,0,0,0,1
+965,Sunny and hot with temperatures reaching up to 84 °F (29 °C); wind speeds approaching speeds of 9.2 miles per hour (14.8 km/h)[2],1,0,0,0,0
+966,Sunny,1,0,0,0,0
+967,Rain and 16 °C (60.8 °F),0,0,0,1,0
+968,Sunny,1,0,0,0,0
+969,Partly cloudy24 °C (75 °F) air temperature31–36 °C (88–97 °F) track temperature2 m/s (4.5 mph; 7.2 km/h) wind from the northwest[3],0,0,0,0,0
+970,"Light rain at start, drying later.",0,0,0,1,0
+971,Clear,1,0,0,0,0
+972,Sunny,1,0,0,0,0
+973,Sunny,1,0,0,0,0
+974,Sunny,1,0,0,0,0
+975,Sunny and hot with temperatures reaching up to 29 °C (84 °F); wind speeds reaching 12.9 kilometres per hour (8.0 mph)[4],1,0,0,0,0
+976,Sunny,1,0,0,0,0
+977,Partly cloudy,0,0,0,0,1
+978,Overcast,0,0,0,0,1
+979,Sunny,1,0,0,0,0
+980,Partially cloudy and dry,0,0,1,0,1
+981,Sunny,1,0,0,0,0
+982,"Wet at start, then drying. Air temperature: 28°C (82°F)",0,0,0,1,0
+983,Cloudy,0,0,0,0,1
+984,Sunny,1,0,0,0,0
+985,Sunny with temperatures reaching up to 82.9 °F (28.3 °C); wind speeds approaching speeds of 13.8 miles per hour (22.2 km/h)[4],1,0,0,0,0
+986,"Sunny, dry",0,0,1,0,0
+987,Sunny,1,0,0,0,0
+988,Clear,1,0,0,0,0
+989,Sunny,1,0,0,0,0
+990,Clear,1,0,0,0,0
+991,Sunny,1,0,0,0,0
+992,Cloudy,0,0,0,0,1
+993,"Partially cloudy and dry, 16°C and cold.",0,0,0,0,1
+994,Sunny,1,0,0,0,0
+995,Temperatures reaching up to 22.7 °C (72.9 °F); with wind speeds reaching 11.1 kilometres per hour (6.9 mph)[2],0,0,0,0,0
+996,"Partially cloudy, warm and dry",1,0,1,0,0
+997,Sunny,1,0,0,0,0
+998,Sunny 27.0 °C (80.6 °F)[2],1,0,0,0,0
+999,Overcast with intermittent rain,0,0,0,1,1
+1000,Sunny,1,0,0,0,0
+1001,Cloudy,0,0,0,0,1
+1002,Sunny,1,0,0,0,0
+1003,Clear,1,0,0,0,0
+1004,Cloudy,0,0,0,0,1
+1005,Partly cloudy,0,0,0,0,1
+1006,Partly cloudy,0,0,0,0,1
+1007,Sunny,1,0,0,0,0
+1008,Cloudy,0,0,0,0,1
+1009,Clear,1,0,0,0,0
+1010,Sunny,1,0,0,0,0
+1011,Clear,1,0,0,0,0
+1012,Partly cloudy,0,0,0,0,1
+1013,Mostly sunny,1,0,0,0,0
+1014,Sunny,1,0,0,0,0
+1015,Overcast,0,0,0,0,1
+1016,Temperatures reaching up to 29.6 °C (85.3 °F); wind speeds negligible[2],0,0,0,0,0
+1017,Clear,1,0,0,0,0
+1018,"Sunny, 36C (97F)",0,0,0,0,0
+1019,Partly cloudy,0,0,0,0,1
+1020,"Early rain, Late clouds",0,0,0,0,1
+1021,Sunny,1,0,0,0,0
+1022,Partly cloudy,0,0,0,0,1
+1023,Partly cloudy,0,0,0,0,1
+1024,Slightly hazy,0,0,0,0,0
+1025,Partly cloudy,0,0,0,0,1
+1026,Sunny,1,0,0,0,0
+1027,Partly cloudy,0,0,0,0,1
+1028,Sunny,1,0,0,0,0
+1029,Sunny,1,0,0,0,0
+1030,Clear,1,0,0,0,0
+1031,Sunny,1,0,0,0,0
+1032,Sunny,1,0,0,0,0
+1033,"Wet at start, partly cloudy",0,0,0,1,1
+1034,Partly cloudy,0,0,0,0,1
+1035,Sunny,1,0,0,0,0
+1036,Partly cloudy,0,0,0,0,1
+1037,Partly cloudy,0,0,0,0,1
+1038,Sunny,1,0,0,0,0
+1039,Sunny,1,0,0,0,0
+1040,Sunny,1,0,0,0,0
+1041,"Partly cloudy, 10 °C (50 °F)",0,0,0,0,0
+1042,Cloudy,0,0,0,0,1
+1043,Partly cloudy,0,0,0,0,1
+1044,Overcast. Wet and drying track. Air: 11–14 °C (52–57 °F); Track: 14–17 °C (57–63 °F),0,0,0,1,0
+1045,Clear,1,0,0,0,0
+1046,Clear,1,0,0,0,0
+1047,Clear,1,0,0,0,0
+1053,"Wet at start, drying during race, 9 °C (48 °F)",0,0,0,1,0
+1074,Clear,1,0,0,0,0
+1052,"Clear, 21 °C (70 °F)",0,0,0,0,0
+1051,Clear,1,0,0,0,0
+1054,Light cloud,0,0,0,0,0
+1055,Cloudy,0,0,0,0,1
+1056,Sunny,1,0,0,0,0
+1057,Sunny,1,0,0,0,0
+1058,Partly cloudy. Ambient temperature: 25 to 29 °C (77 to 84 °F); Surface temperature: 48 to 56 °C (118 to 133 °F),0,0,0,0,0
+1059,Windy and partly cloudy. Ambient temperature: 24 to 27 °C (75 to 81 °F); Surface temperature: 33 to 38 °C (91 to 100 °F),0,0,0,0,0
+1060,Partly cloudy,0,0,0,0,1
+1061,Clear. Ambient: 29 to 31 °C (84 to 88 °F); Surface: 48 to 52 °C (118 to 126 °F),0,0,0,0,0
+1062,Rain and sunny. Ambient: 26 to 29 °C (79 to 84 °F); Surface: 31 to 52 °C (88 to 126 °F).[3],0,0,0,1,0
+1063,Wet; persistent rain,0,0,0,1,0
+1064,Sunny,1,0,0,0,0
+1065,Sunny,1,0,0,0,0
+1066,Cloudy and rainy,0,0,0,1,1
+1067,Overcast with intermittent rain,0,0,0,1,1
+1069,Sunny,1,0,0,0,0
+1070,Sunny,1,0,0,0,0
+1071,Sunny,1,0,0,0,0
+1072,Clear,1,0,0,0,0
+1073,Clear,1,0,0,0,0
+1075,Clear,1,0,0,0,0
+1076,Partly cloudy,0,0,0,0,1
+1077,Cloudy in a wet and drying track[2],0,0,0,1,1
+1078,"Warm, partly cloudy",0,0,0,0,1
+1079,Sunny,1,0,0,0,0
+1080,Rain and partly cloudy in wet-and-drying track conditions,0,0,0,1,1
+1081,Sunny,1,0,0,0,0
+1082,Sunny,1,0,0,0,0
+1083,Partly cloudy,0,0,0,0,1
+1084,Partly cloudy,0,0,0,0,1
+1085,Sunny,1,0,0,0,0
+1086,"Overcast with drizzle throughout, light rain at the end",0,0,0,1,1
+1087,Sunny,1,0,0,0,0
+1088,Partly cloudy,0,0,0,0,1
+1089,Sunny,1,0,0,0,0
+1091,Partly cloudy in a wet and drying track,0,0,0,1,1
+1092,Rain,0,0,0,1,0
+1093,Partly cloudy,0,0,0,0,1
+1094,Partly cloudy,0,0,0,0,1
+1095,Cloudy,0,0,0,0,1
+1096,Clear,1,0,0,0,0
+1098,Clear,1,0,0,0,0
+1099,Clear,1,0,0,0,0
+1100,Sunny,1,0,0,0,0
+1101,Partly cloudy,0,0,0,0,1
+1102,Partly cloudy,0,0,0,0,1
+1104,"Cloudy, with some rain intervals",0,0,0,1,0
+1105,Cloudy,0,0,0,0,1
+1106,,0,0,0,0,0
+1107,,0,0,0,0,0
+1108,,0,0,0,0,0
+1109,,0,0,0,0,0
+1110,,0,0,0,0,0
+1111,,0,0,0,0,0
+1112,,0,0,0,0,0
+1113,,0,0,0,0,0
+1114,,0,0,0,0,0
+1115,,0,0,0,0,0
+1116,,0,0,0,0,0
+1117,,0,0,0,0,0
+1118,,0,0,0,0,0
+1119,,0,0,0,0,0
+1120,,0,0,0,0,0

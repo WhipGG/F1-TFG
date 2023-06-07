@@ -5,7 +5,7 @@ import numpy as np
 
 
 
-def update_database(path_to_save='./f1db_csv'):
+def update_database(path_to_save='f1dataapp/f1db_csv'):
     r = requests.get('https://ergast.com/downloads/f1db_csv.zip')
     z = zipfile.ZipFile(io.BytesIO(r.content))
     z.extractall(path_to_save)
@@ -77,7 +77,7 @@ def update_database(path_to_save='./f1db_csv'):
 
 
     
-def update_learning_dataset(data_path='./f1db_csv/', save_path='./data_ready/'):
+def update_learning_dataset(data_path='f1dataapp/f1db_csv/', save_path='f1dataapp/data_ready/'):
     # Load data
     constructor_standings = pd.read_csv(data_path+'constructor_standings.csv', na_values=["\\N"])
     driver_standings = pd.read_csv(data_path+'driver_standings.csv', na_values=["\\N"])

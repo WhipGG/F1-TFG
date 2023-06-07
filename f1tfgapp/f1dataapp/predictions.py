@@ -18,7 +18,7 @@ def generate_new_race_start(grid_positions,
                                      'weather_wet':0,
                                      'weather_cloudy':0}, 
                             driver_data='data_ready/2023_grid_data.csv',
-                            data_path = './f1db_csv/'):
+                            data_path = 'f1db_csv/'):
     # Load necessary data from csv
     date_parse_list = ['date', 'fp1_date', 'fp2_date', 'fp3_date', 'quali_date', 'sprint_date']
     races = pd.read_csv(data_path+'races.csv', na_values=["\\N"], parse_dates=date_parse_list)
@@ -69,7 +69,9 @@ def generate_new_race_start(grid_positions,
     drop_list_4 = ['driverRef', 'dob', 'firstRaceDate', 'raceId', 'date', 'forename', 'surname', 'fullname']
     next_grid = next_grid.drop(drop_list_4, axis=1)
     
-    return next_grid
+    standings = driver_standings.loc[driver_standings['raceId']==int(next_race['raceId']-1)][['driverId', 'points']]
+    return next_grid, standings
+
 
 
 
@@ -80,7 +82,7 @@ def predict(grid_positions,
                      'weather_wet':0,
                      'weather_cloudy':0}):
     
-    df = generate_new_race_start(grid_positions, weather=weather)
+    df, standings = generate_new_race_start(grid_positions, weather=weather)
     # Transform data
     df['grid'] = df['grid'].clip(upper=20)
     columns_to_scale = ['grid', 'year', 'round', 'age', 'experience', 'driversPointsBeforeRace', 'constPointsBeforeRace']
@@ -96,5 +98,6 @@ def predict(grid_positions,
     df_preds['driverId'] = df['driverId']
     df_preds['prediction'] = np.argmax(preds, axis=1)+1
     df_preds = df_preds.merge(drivers, how='inner', on='driverId')
-    df_preds = df_preds.sort_values(by=['prediction'])
+    df_preds = df_preds.merge(standings, how='inner', on='driverId')
+    df_preds = df_preds.sort_values(by=['prediction', 'points'], ascending=[True, False])
     return df_preds
