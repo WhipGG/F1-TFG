@@ -10,4 +10,37 @@
 
 {% endblock %}
 
+{% block update-buttons %}
+  {% if user.is_authenticated and request.get_full_path == "/admin/" %}
+    <div id="update-buttons">
+      <div id="update-machine-learning">
+        <h3>Ergast Data and ML Management</h3>
+        <form action="{% url 'f1dataapp:update_ergast' %}" method="POST" id="ergastForm" onsubmit="return confirm('Do you want to update the Ergast dataset?');">
+          {% csrf_token %}
+          <input type="submit" class="default" value="Update Ergast" id="submitErgast">
+        </form>
+        <form action="{% url 'f1dataapp:update_dataset' %}" method="POST" id="datasetForm" onsubmit="return confirm('Do you update the ML dataset?');">
+          {% csrf_token %}
+          <input type="submit" class="default" value="Update Dataset" id="submitDataset">
+        </form>
+      </div>
+      <div id="update-database">
+        <h3>SQL Database Management</h3>
+        <form action="{% url 'f1dataapp:populate_drivers' %}" method="POST" id="driversForm" onsubmit="return confirm('Do you want to reset the Drivers SQL database?');">
+          {% csrf_token %}
+          <input type="submit" class="default" value="Populate Drivers" id="submitDrivers">
+        </form>
+        <form action="{% url 'f1dataapp:populate_constructors' %}" method="POST" id="constructorsForm" onsubmit="return confirm('Do you want to reset the Constructors SQL database?');">
+          {% csrf_token %}
+          <input type="submit" class="default" value="Populate Constructors" id="submitConstructors">
+        </form>
+        <form action="{% url 'f1dataapp:populate_circuits' %}" method="POST" id="circuitsForm" onsubmit="return confirm('Do you want to reset the Circuits SQL database?');">
+          {% csrf_token %}
+          <input type="submit" class="default" value="Populate Circuits" id="submitCircuits">
+        </form>
+      </div>
+    </div>
+  {% endif %}
+{% endblock %}
+
 {% block nav-global %}{% endblock %}

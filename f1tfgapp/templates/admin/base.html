@@ -106,16 +106,7 @@
           {% endblock %}
           {% block sidebar %}{% endblock %}
           <br class="clear">
-          <div id="update-buttons">
-            <form action="{% url 'f1dataapp:update_ergast' %}" method="POST">
-                {% csrf_token %}
-                <input type="submit" class="default" value="Update Ergast">
-            </form>
-            <form action="{% url 'f1dataapp:update_dataset' %}" method="POST">
-                {% csrf_token %}
-                <input type="submit" class="default" value="Update Dataset">
-            </form>
-          </div>
+          {% block update-buttons %}{% endblock %}
         </div>
         <!-- END Content -->
         {% block footer %}<div id="footer"></div>{% endblock %}
