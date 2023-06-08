@@ -20,7 +20,7 @@ class Driver(models.Model):
         return self.name
     
     def img_preview(self):
-        return mark_safe(f'<img src = "{self.photo.url}" width = "300"/>')
+        return mark_safe(f'<img src="{self.photo.url}" width="300"/>')
 
 
 class Constructor(models.Model):
@@ -35,7 +35,7 @@ class Constructor(models.Model):
         return self.name
     
     def img_preview(self):
-        return mark_safe(f'<img src = "{self.logo.url}" width = "300"/>')
+        return mark_safe(f'<img src="{self.logo.url}" width="300"/>')
 
 
 class Circuit(models.Model):
@@ -51,10 +51,19 @@ class Circuit(models.Model):
         return self.name
     
     def img_preview(self):
-        return mark_safe(f'<img src = "{self.layout.url}" width = "600"/>')
+        return mark_safe(f'<img src="{self.layout.url}" width="600"/>')
 
 
 class Grid(models.Model):
     driver = models.ForeignKey("Driver", on_delete=models.CASCADE)
     constructor = models.ForeignKey("Constructor", on_delete=models.CASCADE)
+
+    def __str__(self) -> str:
+        return self.driver.name + ' - ' +  self.constructor.name
+    
+    def driver_photo(self):
+        return mark_safe(f'<img src="{self.driver.photo.url}" height="75"/>')
+    
+    def constructor_photo(self):
+        return mark_safe(f'<img src="{self.constructor.logo.url}" height="75"/>')
     
