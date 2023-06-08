@@ -1,4 +1,5 @@
 from django.db import models
+from django.utils.html import mark_safe
 
 # Create your models here.
 
@@ -13,10 +14,13 @@ class Driver(models.Model):
     nationality = models.CharField(max_length=100)
     url = models.CharField(max_length=1000)
     name = models.CharField(max_length=200,unique=True)
-    photoUrl = models.CharField(max_length=1000, null=True)
+    photo = models.ImageField(upload_to='driver_images', null=True)
 
     def __str__(self) -> str:
         return self.name
+    
+    def img_preview(self):
+        return mark_safe(f'<img src = "{self.photo.url}" width = "300"/>')
 
 
 class Constructor(models.Model):
@@ -25,10 +29,13 @@ class Constructor(models.Model):
     name = models.CharField(max_length=200,unique=True)
     nationality = models.CharField(max_length=100)
     url = models.CharField(max_length=1000)
-    logoUrl = models.CharField(max_length=1000, null=True)
+    logo = models.ImageField(upload_to='team_logos', null=True)
     
     def __str__(self) -> str:
         return self.name
+    
+    def img_preview(self):
+        return mark_safe(f'<img src = "{self.logo.url}" width = "300"/>')
 
 
 class Circuit(models.Model):
@@ -38,10 +45,13 @@ class Circuit(models.Model):
     location = models.CharField(max_length=200)
     country = models.CharField(max_length=200)
     url = models.CharField(max_length=1000)
-    layoutUrl = models.CharField(max_length=1000, null=True)
+    layout = models.ImageField(upload_to='circuit_layouts', null=True)
     
     def __str__(self) -> str:
         return self.name
+    
+    def img_preview(self):
+        return mark_safe(f'<img src = "{self.layout.url}" width = "600"/>')
 
 
 class Grid(models.Model):
