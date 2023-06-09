@@ -5,6 +5,7 @@ from django.views.generic.base import RedirectView
 
 from .update_ergast import update_database, update_learning_dataset
 from .populateDB import populate_drivers, populate_constructors, populate_circuits
+from .forms import Prediction
 
 
 def index(request):
@@ -12,7 +13,12 @@ def index(request):
 
 
 def predictions(request):
-    return render(request, 'f1dataapp/predictions.html')
+    if request.method == "POST":
+        form = Prediction(request.POST)
+        if form.is_valid():
+            return render(request, 'f1dataapp/predictions.html', {'form': form})
+    form = Prediction()
+    return render(request, 'f1dataapp/predictions.html', {'form': form})
 
 
 

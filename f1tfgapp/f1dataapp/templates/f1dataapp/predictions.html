@@ -13,27 +13,23 @@
                         <div class="col-sm-6 text-center">
                             <div class="form-group">
                                 <h3>Weather</h3>
-                                <div class="form-check">
+                                <div class="form-group pt-3">
                                     {{ form.warm }}
                                     <label class="form-check-label" for="{{ form.warm.id_for_label }}">{{ form.warm.label }}</label>
-                                </div>
-                                
-                                <div class="form-check">
+                                </div>                                
+                                <div class="form-group">
                                     {{ form.cold }}
                                     <label class="form-check-label" for="{{ form.cold.id_for_label }}">{{ form.cold.label }}</label>
-                                </div>
-                                
-                                <div class="form-check">
+                                </div>                                
+                                <div class="form-group">
                                     {{ form.dry }}
                                     <label class="form-check-label" for="{{ form.dry.id_for_label }}">{{ form.dry.label }}</label>
-                                </div>
-                                
-                                <div class="form-check">
+                                </div>                               
+                                <div class="form-group">
                                     {{ form.wet }}
                                     <label class="form-check-label" for="{{ form.wet.id_for_label }}">{{ form.wet.label }}</label>
-                                </div>
-                                
-                                <div class="form-check">
+                                </div>                                
+                                <div class="form-group">
                                     {{ form.cloudy }}
                                     <label class="form-check-label" for="{{ form.cloudy.id_for_label }}">{{ form.cloudy.label }}</label>
                                 </div>
@@ -41,37 +37,88 @@
                         </div>
                         <div class="col-sm-6">
                             <h3>Starting Grid</h3>
-                            <div class="form-group">
-                                <label for="{{ form.driver.id_for_label }}">{{ form.driver.label }}</label>
-                                {{ form.driver }}
+                            <div class="form-group pt-3">
+                                <label for="{{ form.max_verstappen.id_for_label }}" style="min-width: 150px !important">{{ form.max_verstappen.label }}</label>
+                                {{ form.max_verstappen }}
                             </div>
-                            
-                            <div class="form-group">
-                                <label for="{{ form.constructor.id_for_label }}">{{ form.constructor.label }}</label>
-                                {{ form.constructor }}
+                            <div class="form-group pt-2">
+                                <label for="{{ form.hamilton.id_for_label }}" style="min-width: 150px !important">{{ form.hamilton.label }}</label>
+                                {{ form.hamilton }}
                             </div>
-                            
-                            <div class="form-group">
-                                <label for="{{ form.circuit.id_for_label }}">{{ form.circuit.label }}</label>
-                                {{ form.circuit }}
+                            <div class="form-group pt-2">
+                                <label for="{{ form.alonso.id_for_label }}" style="min-width: 150px !important">{{ form.alonso.label }}</label>
+                                {{ form.alonso }}
                             </div>
-                            
-                            <div class="form-group">
-                                <label for="{{ form.year.id_for_label }}">{{ form.year.label }}</label>
-                                {{ form.year }}
+                            <div class="form-group pt-2">
+                                <label for="{{ form.leclerc.id_for_label }}" style="min-width: 150px !important">{{ form.leclerc.label }}</label>
+                                {{ form.leclerc }}
                             </div>
-                            
-                            <div class="form-group">
-                                <label for="{{ form.grid.id_for_label }}">{{ form.grid.label }}</label>
-                                {{ form.grid }}
+                            <div class="form-group pt-2">
+                                <label for="{{ form.russell.id_for_label }}" style="min-width: 150px !important">{{ form.russell.label }}</label>
+                                {{ form.russell }}
                             </div>
-                            
-                            <div class="form-group">
-                                <label for="{{ form.year_round.id_for_label }}">{{ form.year_round.label }}</label>
-                                {{ form.year_round }}
+                            <div class="form-group pt-2">
+                                <label for="{{ form.sainz.id_for_label }}" style="min-width: 150px !important">{{ form.sainz.label }}</label>
+                                {{ form.sainz }}
+                            </div>
+                            <div class="form-group pt-2">
+                                <label for="{{ form.perez.id_for_label }}" style="min-width: 150px !important">{{ form.perez.label }}</label>
+                                {{ form.perez }}
+                            </div>
+                            <div class="form-group pt-2">
+                                <label for="{{ form.norris.id_for_label }}" style="min-width: 150px !important">{{ form.norris.label }}</label>
+                                {{ form.norris }}
+                            </div>
+                            <div class="form-group pt-2">
+                                <label for="{{ form.piastri.id_for_label }}" style="min-width: 150px !important">{{ form.piastri.label }}</label>
+                                {{ form.piastri }}
+                            </div>
+                            <div class="form-group pt-2">
+                                <label for="{{ form.ocon.id_for_label }}" style="min-width: 150px !important">{{ form.ocon.label }}</label>
+                                {{ form.ocon }}
+                            </div>
+                            <div class="form-group pt-2">
+                                <label for="{{ form.gasly.id_for_label }}" style="min-width: 150px !important">{{ form.gasly.label }}</label>
+                                {{ form.gasly }}
+                            </div>
+                            <div class="form-group pt-2">
+                                <label for="{{ form.stroll.id_for_label }}" style="min-width: 150px !important">{{ form.stroll.label }}</label>
+                                {{ form.stroll }}
+                            </div>
+                            <div class="form-group pt-2">
+                                <label for="{{ form.bottas.id_for_label }}" style="min-width: 150px !important">{{ form.bottas.label }}</label>
+                                {{ form.bottas }}
+                            </div>
+                            <div class="form-group pt-2">
+                                <label for="{{ form.zhou.id_for_label }}" style="min-width: 150px !important">{{ form.zhou.label }}</label>
+                                {{ form.zhou }}
+                            </div>
+                            <div class="form-group pt-2">
+                                <label for="{{ form.tsunoda.id_for_label }}" style="min-width: 150px !important">{{ form.tsunoda.label }}</label>
+                                {{ form.tsunoda }}
+                            </div>
+                            <div class="form-group pt-2">
+                                <label for="{{ form.de_vries.id_for_label }}" style="min-width: 150px !important">{{ form.de_vries.label }}</label>
+                                {{ form.de_vries }}
+                            </div>
+                            <div class="form-group pt-2">
+                                <label for="{{ form.kevin_magnussen.id_for_label }}" style="min-width: 150px !important">{{ form.kevin_magnussen.label }}</label>
+                                {{ form.kevin_magnussen }}
+                            </div>
+                            <div class="form-group pt-2">
+                                <label for="{{ form.hulkenberg.id_for_label }}" style="min-width: 150px !important">{{ form.hulkenberg.label }}</label>
+                                {{ form.hulkenberg }}
+                            </div>
+                            <div class="form-group pt-2">
+                                <label for="{{ form.albon.id_for_label }}" style="min-width: 150px !important">{{ form.albon.label }}</label>
+                                {{ form.albon }}
+                            </div>
+                            <div class="form-group pt-2">
+                                <label for="{{ form.sargeant.id_for_label }}" style="min-width: 150px !important">{{ form.sargeant.label }}</label>
+                                {{ form.sargeant }}
                             </div>
                         </div>
-                        <div class="col-sm-12 text-center"><button type="submit" class="btn btn-primary">Predict</button></div>
+                        <div class="col-sm-12 text-center pt-3"><button type="submit" class="btn btn-primary">Predict</button></div>
                     </div>
                 </form>
             </div>
