@@ -5,21 +5,21 @@
 {% block contenido %}
 <main role="main">
     <div class="container-fluid">
-        <div id="next-race-banner" class="row align-items-center">
+        <div id="next-race-banner" class="row align-items-center mt-2">
             <div class="col-md-1"></div>
             <div class="col-md-5">
                 <h3 id="next-race-text" class="mb-4">
                     Next race
                 </h3>
                 <h1>
-                    BARCELONA
+                    {{ raceName }}
                 </h1>
                 <h3 class="mt-3">
-                    02 - 04 jun
+                    {{ dates }}
                 </h3>
             </div>
             <div class="col-md-5 align-middle">
-                <img alt="Circuit Layout" class="w-100" src="https://media.formula1.com/image/upload/f_auto/q_auto/v1677244986/content/dam/fom-website/2018-redesign-assets/Circuit%20maps%2016x9/Spain_Circuit.png" />
+                <img alt="Circuit Layout" class="w-100" src="{{ layout }}" />
             </div>
             <div class="col-md-1"></div>
         </div>

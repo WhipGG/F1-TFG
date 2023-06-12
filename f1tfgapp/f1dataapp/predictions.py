@@ -7,8 +7,8 @@ import joblib
 
 
 
-model = tf.keras.models.load_model('models/nn_f1.h5')
-scaler = joblib.load('models/minmaxscaler_f1.pkl')
+model = tf.keras.models.load_model('f1dataapp/models/nn_f1.h5')
+scaler = joblib.load('f1dataapp/models/minmaxscaler_f1.pkl')
 
 
 def generate_new_race_start(grid_positions, 
@@ -17,8 +17,8 @@ def generate_new_race_start(grid_positions,
                                      'weather_dry':0,
                                      'weather_wet':0,
                                      'weather_cloudy':0}, 
-                            driver_data='data_ready/2023_grid_data.csv',
-                            data_path = 'f1db_csv/'):
+                            driver_data='f1dataapp/data_ready/2023_grid_data.csv',
+                            data_path = 'f1dataapp/f1db_csv/'):
     # Load necessary data from csv
     date_parse_list = ['date', 'fp1_date', 'fp2_date', 'fp3_date', 'quali_date', 'sprint_date']
     races = pd.read_csv(data_path+'races.csv', na_values=["\\N"], parse_dates=date_parse_list)

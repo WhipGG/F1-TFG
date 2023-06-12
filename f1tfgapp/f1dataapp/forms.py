@@ -34,3 +34,16 @@ class Prediction(forms.Form):
     albon = forms.ChoiceField(choices=((x,x) for x in range(1,22)), required=True, label="Alexander Albon")
     sargeant = forms.ChoiceField(choices=((x,x) for x in range(1,22)), required=True, label="Logan Sargeant")
 
+def process_prediction_form(form):
+    driverIds = []
+    strating_pos = []
+    for gridObj in Grid.objects.all():
+        driver = gridObj.driver
+        driverIds.append(int(driver.driverId))
+        strating_pos.append(int(form.cleaned_data[driver.driverRef]))
+    strating_pos_check = strating_pos.copy()
+    strating_pos_check = [i for i in strating_pos_check if i != 21]
+    if len(strating_pos_check) != len(set(strating_pos_check)):
+        return "Error: Two or more drivers cannot have the same starting position", False
+    return driverIds, strating_pos
+

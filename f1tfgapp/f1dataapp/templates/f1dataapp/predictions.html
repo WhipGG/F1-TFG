@@ -5,8 +5,12 @@
 {% block contenido %}
 <main role="main">
     <div class="container-fluid">
-        <div class="row">
+        <div class="row mt-2">
+            {% if request.method != 'POST' or error|length > 0 %}
+            <div class="col-md-12">
+            {% else %}
             <div class="col-md-7">
+            {% endif %}
                 <form action="" method="post" class="needs-validation">
                     {% csrf_token %}
                     <div class="row">
@@ -122,41 +126,16 @@
                     </div>
                 </form>
             </div>
-            <div class="col-md-5">
-                <h3>
-                    1. Max Verstappen
-                </h3>
-                <h3>
-                    2. Lewis Hammilton
-                </h3>
-                <h3>
-                    3. George Russel
-                </h3>
-                <h3>
-                    4. Sergio Perez
-                </h3>
-                <h3>
-                    5. Carlos Sainz
-                </h3>
-                <h3>
-                    6. Lance Stroll
-                </h3>
-                <h3>
-                    7. Fernando Alonso
-                </h3>
-                <h3>
-                    8. Esteban Ocon
-                </h3>
-                <h3>
-                    9. Zhou Guanyu
-                </h3>
-                <h3>
-                    10. Pierre Gasly
-                </h3>
-                <h3>
-                    11. Charles Leclerc
-                </h3>
-            </div>
+            {% if request.method == 'POST' and error|length == 0 %}
+                <div class="col-md-5">
+                    <h1>Predicted Results</h1>
+                    {% for driver in prediction %}
+                        <p>
+                            {{ forloop.counter }}. {{ driver.name }}
+                        </p>
+                    {% endfor %}
+                </div>
+            {% endif %}
         </div>
     </div>
 </main>

@@ -1,0 +1,71 @@
+{% extends 'f1dataapp/base.html' %}
+
+{% block tituloPagina %} F1 Data {% endblock %}
+
+{% block contenido %}
+<main role="main">
+    <div class="container">
+        <h1 class="text-center" style="margin-top: 1rem;">Latest results</h1>
+        <div class="row text-center">
+            <div class="col-sm-6">
+                <h2>Qualifying Fastest</h2>
+                <img src="data:image/png;base64,{{chart_q}}" alt="">
+            </div>
+            <div class="col-sm-6">
+                <h2>Race Fastest</h2>
+                <img src="data:image/png;base64,{{chart_r}}" alt="">
+            </div>
+        </div>
+        <div>
+            <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th scope="col">Pos</th>
+                    <th scope="col">Driver</th>
+                    <th scope="col">Team</th>
+                    <th scope="col">Status</th>
+                    <th scope="col">Points</th>
+                  </tr>
+                </thead>
+                <tbody>
+                    {% for row in table %}
+                    <tr>
+                        <th scope="row">{{row.position}}</th>
+                        <td class="align-middle">{{row.name}} <strong>{{row.code}}</strong></td>
+                        <td class="align-middle">
+                            <!--<i class="fas fa-shield" style="color: #{{row.color}}"></i>--> 
+                            <img alt="Team Logo" class="img-fluid" src="{{ row.logo }}" style="max-height: 30px !important"/>
+                            {{row.team}}
+                        </td>
+                        <td class="align-middle">
+                            {% if row.status == "Finished" %}
+                                {% if row.position == 1 %} 
+                                    <i class="fas fa-trophy" style="color:goldenrod"></i>
+                                {% elif row.position == 2 %}
+                                    <i class="fas fa-trophy" style="color:silver"></i>
+                                {% elif row.position == 3 %}
+                                    <i class="fas fa-trophy" style="color:#cd7f32"></i>
+                                {% else %}
+                                    <i class="fas fa-flag-checkered"></i>
+                                {% endif %}
+                            {% endif %}
+                            {% if row.status == "Collision" %}
+                            <i class="fas fa-car-crash"></i>
+                             {% endif %} 
+                             {% if row.status == "Engine" %}
+                             <i class="fas fa-cog"></i>
+                             {% endif %}
+                             {% if row.status == "Accident" %}
+                             <i class="fas fa-exclamation-triangle"></i>
+                             {% endif %}
+                             {{row.status}}
+                            </td>
+                        <td class="align-middle">{{row.points}}</td>
+                      </tr>
+                    {% endfor %}
+                </tbody>
+              </table>
+        </div>
+    </div>
+    </main>
+{% endblock %}
