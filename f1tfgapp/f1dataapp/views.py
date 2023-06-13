@@ -8,7 +8,7 @@ import datetime
 
 from .update_ergast import update_database, update_learning_dataset
 from .populateDB import populate_drivers, populate_constructors, populate_circuits
-from .forms import Prediction, process_prediction_form
+from .forms import Prediction, process_prediction_form, Driver_vs_Driver_Lap, Driver_Speed_Lap
 from .predictions import predict
 from .models import Driver, Circuit
 from .charts import ChartFactory
@@ -56,6 +56,42 @@ def latest_results(request):
     chart_r = ChartFactory.generate_times('R')
     table_data = ChartFactory.generate_table()
     return render(request, 'f1dataapp/latest_results.html', {'chart_q': chart_q, 'chart_r': chart_r, 'table': table_data})
+
+
+def driver_vs_driver_lap(request):
+    if request.method == "POST":
+        form = Driver_vs_Driver_Lap(request.POST)
+        if form.is_valid():
+            driver_1 = form.cleaned_data['driver_1']
+            driver_2 = form.cleaned_data['driver_2']
+            circuit = form.cleaned_data['circuit']
+            year = int(form.cleaned_data['year'])
+            session = form.cleaned_data['session']
+            try:
+                chart = ChartFactory.generate_VS(year, driver_1.code, driver_2.code, circuit.name, session)
+            except:
+                return render(request, 'f1dataapp/driver_vs_driver_lap.html', {'form': form, 'error':"Error: Input data does not match any event."})
+        return render(request, 'f1dataapp/driver_vs_driver_lap.html', {'form': form, 'chart': chart})
+    form = Driver_vs_Driver_Lap()
+    return render(request, 'f1dataapp/driver_vs_driver_lap.html', {'form': form})
+
+
+def telemetry_speed(request):
+    if request.method == "POST":
+        form = Driver_Speed_Lap(request.POST)
+        if form.is_valid():
+            driver = form.cleaned_data['driver']
+            circuit = form.cleaned_data['circuit']
+            year = int(form.cleaned_data['year'])
+            session = form.cleaned_data['session']
+            try:
+                chart_speed = ChartFactory.generate_speed_lap(year, driver.code, circuit.name, session)
+                chart_gears = ChartFactory.generate_gears_lap(year, driver.code, circuit.name, session)
+            except:
+                return render(request, 'f1dataapp/driver_speed_lap.html', {'form': form, 'error':"Error: Input data does not match any event."})
+        return render(request, 'f1dataapp/driver_speed_lap.html', {'form': form, 'chart_speed': chart_speed, 'chart_gears':chart_gears})
+    form = Driver_Speed_Lap()
+    return render(request, 'f1dataapp/driver_speed_lap.html', {'form': form})
 
 
 

@@ -30,7 +30,13 @@
 }
 
 
-/* Index Styles */
+
+/* Common styles */
+.page-title {
+    font-family: "F1 Regular", Arial, Helvetica, sans-serif;
+}
+
+/* Index styles */
 #next-race-banner {
     font-family: "F1 Wide", Arial, Helvetica, sans-serif;
 }

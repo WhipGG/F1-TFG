@@ -1,0 +1,48 @@
+{% extends 'f1dataapp/base.html' %}
+
+{% block tituloPagina %} F1 Data - Diver vs Driver Lap {% endblock %}
+
+{% block contenido %}
+<main role="main">
+    <div class="container">
+        <h1 class="text-center page-title" style="margin-top: 1rem; margin-bottom: 1rem;">Driver vs Driver Fastest Lap</h1>
+        <form action="" method="post" class="text-center">
+            {% csrf_token %}
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label class="form-check-label" for="{{ form.driver_1.id_for_label }}">{{ form.driver_1.label }}</label>
+                        {{ form.driver_1 }}
+                    </div>     
+                    <div class="form-group mt-2">
+                        <label class="form-check-label" for="{{ form.driver_2.id_for_label }}">{{ form.driver_2.label }}</label>
+                        {{ form.driver_2 }}
+                    </div>  
+                </div>
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <label class="form-check-label" for="{{ form.year.id_for_label }}">{{ form.year.label }}</label>
+                        {{ form.year }}
+                    </div>   
+                    <div class="form-group mt-2">
+                        <label class="form-check-label" for="{{ form.circuit.id_for_label }}">{{ form.circuit.label }}</label>
+                        {{ form.circuit }}
+                    </div>   
+                    <div class="form-group mt-2">
+                        <label class="form-check-label" for="{{ form.session.id_for_label }}">{{ form.session.label }}</label>
+                        {{ form.session }}
+                    </div>   
+                </div>
+                <div class="col-md-12 mt-2">
+                    <div class="form-group">
+                        <input type='submit' value='Generate Chart' class="btn btn-primary"/>
+                    </div>
+                </div>
+            </div>
+        </form>
+        <div class="container mt-3">
+            <img src="data:image/png;base64,{{chart}}" alt="" class="img-fluid">
+        </div>
+    </div>
+</main>
+{% endblock %}

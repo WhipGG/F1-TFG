@@ -41,12 +41,9 @@
                   <i class="fas fa-tachometer-alt"></i> Speed stats
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                  <li><a class="dropdown-item" href="/speed/chart">Driver speed telemetry</a></li>
-                  <li><a class="dropdown-item" href="/speed/compare">Driver vs driver</a></li>
+                  <li><a class="dropdown-item" href="{% url 'f1dataapp:driver_speed_lap' %}">Driver speed</a></li>
+                  <li><a class="dropdown-item" href="{% url 'f1dataapp:driver_vs_driver_lap' %}">Driver vs Driver Fast Lap</a></li>
                 </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="/populate/"><i class="fas fa-database"></i> Populate DB</a>
               </li>
             </ul>
           </div>
