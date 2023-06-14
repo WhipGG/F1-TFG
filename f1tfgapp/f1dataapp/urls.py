@@ -10,6 +10,8 @@ urlpatterns = [
     path("latest_results", views.latest_results, name="latest_results"),
     path("driver_vs_driver_lap", views.driver_vs_driver_lap, name="driver_vs_driver_lap"),
     path("driver_speed_lap", views.telemetry_speed, name="driver_speed_lap"),
+    path("tire_stints", views.tyre_stints, name="tire_stints"),
+    path("position_changes", views.position_changes, name="position_changes"),
     # Admin form management
     path("update_ergast", views.update_ergast, name="update_ergast"),
     path("update_dataset", views.update_dataset, name="update_dataset"),

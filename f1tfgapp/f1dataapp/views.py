@@ -8,7 +8,7 @@ import datetime
 
 from .update_ergast import update_database, update_learning_dataset
 from .populateDB import populate_drivers, populate_constructors, populate_circuits
-from .forms import Prediction, process_prediction_form, Driver_vs_Driver_Lap, Driver_Speed_Lap
+from .forms import Prediction, process_prediction_form, Driver_vs_Driver_Lap, Driver_Speed_Lap, Tire_Stints, Position_Changes
 from .predictions import predict
 from .models import Driver, Circuit
 from .charts import ChartFactory
@@ -31,6 +31,7 @@ def index(request):
 
 
 def predictions(request):
+    template = 'f1dataapp/predictions.html'
     if request.method == "POST":
         form = Prediction(request.POST)
         if form.is_valid():
@@ -46,9 +47,9 @@ def predictions(request):
             grid = {'driverId':driverIds, 'grid':strating_pos}
             pred_results = list(predict(grid, weather=weather)['driverId'])
             driver_results = [Driver.objects.filter(driverId=pred)[0] for pred in pred_results]
-            return render(request, 'f1dataapp/predictions.html', {'form': form, 'prediction':driver_results})
+            return render(request, template, {'form': form, 'prediction':driver_results})
     form = Prediction()
-    return render(request, 'f1dataapp/predictions.html', {'form': form})
+    return render(request, template, {'form': form})
 
 
 def latest_results(request):
@@ -59,6 +60,7 @@ def latest_results(request):
 
 
 def driver_vs_driver_lap(request):
+    template = 'f1dataapp/driver_vs_driver_lap.html'
     if request.method == "POST":
         form = Driver_vs_Driver_Lap(request.POST)
         if form.is_valid():
@@ -70,13 +72,14 @@ def driver_vs_driver_lap(request):
             try:
                 chart = ChartFactory.generate_VS(year, driver_1.code, driver_2.code, circuit.name, session)
             except:
-                return render(request, 'f1dataapp/driver_vs_driver_lap.html', {'form': form, 'error':"Error: Input data does not match any event."})
-        return render(request, 'f1dataapp/driver_vs_driver_lap.html', {'form': form, 'chart': chart})
+                return render(request, template, {'form': form, 'error':"Error: Input data does not match any event."})
+        return render(request, template, {'form': form, 'chart': chart})
     form = Driver_vs_Driver_Lap()
-    return render(request, 'f1dataapp/driver_vs_driver_lap.html', {'form': form})
+    return render(request, template, {'form': form})
 
 
 def telemetry_speed(request):
+    template = 'f1dataapp/driver_speed_lap.html'
     if request.method == "POST":
         form = Driver_Speed_Lap(request.POST)
         if form.is_valid():
@@ -88,10 +91,43 @@ def telemetry_speed(request):
                 chart_speed = ChartFactory.generate_speed_lap(year, driver.code, circuit.name, session)
                 chart_gears = ChartFactory.generate_gears_lap(year, driver.code, circuit.name, session)
             except:
-                return render(request, 'f1dataapp/driver_speed_lap.html', {'form': form, 'error':"Error: Input data does not match any event."})
-        return render(request, 'f1dataapp/driver_speed_lap.html', {'form': form, 'chart_speed': chart_speed, 'chart_gears':chart_gears})
+                return render(request, template, {'form': form, 'error':"Error: Input data does not match any event."})
+        return render(request, template, {'form': form, 'chart_speed': chart_speed, 'chart_gears':chart_gears})
     form = Driver_Speed_Lap()
-    return render(request, 'f1dataapp/driver_speed_lap.html', {'form': form})
+    return render(request, template, {'form': form})
+
+
+def tyre_stints(request):
+    template = 'f1dataapp/tire_stints.html'
+    if request.method == "POST":
+        form = Tire_Stints(request.POST)
+        if form.is_valid():
+            circuit = form.cleaned_data['circuit']
+            year = int(form.cleaned_data['year'])
+            session = form.cleaned_data['session']
+            try:
+                chart = ChartFactory.generate_tire_stints(year, circuit.name, session)
+            except:
+                return render(request, template, {'form': form, 'error':"Error: Input data does not match any event."})
+        return render(request, template, {'form': form, 'chart': chart})
+    form = Tire_Stints()
+    return render(request, template, {'form': form})
+
+
+def position_changes(request):
+    template = 'f1dataapp/position_changes.html'
+    if request.method == "POST":
+        form = Position_Changes(request.POST)
+        if form.is_valid():
+            circuit = form.cleaned_data['circuit']
+            year = int(form.cleaned_data['year'])
+            try:
+                chart = ChartFactory.generate_position_changes(year, circuit.name)
+            except:
+                return render(request, template, {'form': form, 'error':"Error: Input data does not match any event."})
+        return render(request, template, {'form': form, 'chart': chart})
+    form = Position_Changes()
+    return render(request, template, {'form': form})
 
 
 

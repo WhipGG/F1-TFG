@@ -4,7 +4,6 @@ import urllib.parse
 
 import fastf1
 import fastf1.plotting
-import fastf1.plotting
 import matplotlib as mpl
 import matplotlib.pyplot as plt
 import numpy as np
@@ -176,16 +175,9 @@ class ChartFactory:
         ax5.plot(driver2_tel['Distance'], driver2_tel['DRS'], color=driver2_color, label=driver2)
         ax5.set_xlabel('Distance in m', fontsize=20)
         ax5.set_ylabel('DRS', fontsize=18)
-
-        session_dict = {'FP1': 'Practice 1',
-                        'FP2': 'Practice 2',
-                        'FP3': 'Practice 3',
-                        'Q': 'Qualifying',
-                        'S': 'Sprint',
-                        'SS': 'Sprint Shootout',
-                        'R': 'Race'}
+        
         plt.suptitle(f"Fastest Lap Comparison \n "
-                     f"{session.event['EventName']} {session.event.year} {session_dict[session_type]}\n"
+                     f"{session.event['EventName']} {session.event.year} - {session.name}\n"
                      f"{driver1} vs {driver2}",
                      size='xx-large')
 
@@ -220,7 +212,7 @@ class ChartFactory:
         segments = np.concatenate([points[:-1], points[1:]], axis=1)
 
         fig, ax = plt.subplots(sharex=True, sharey=True, figsize=(12, 6.75))
-        fig.suptitle(f'{weekend.name} {year} - {driver_name} - Speed', size=24, y=0.97)
+        fig.suptitle(f'{weekend.EventName} {year} - {session.name} - {driver_name} - Speed', size=24, y=0.97)
 
         plt.subplots_adjust(left=0.1, right=0.9, top=0.9, bottom=0.12)
         ax.axis('off')
@@ -262,7 +254,7 @@ class ChartFactory:
         session.load()
         lap = session.laps.pick_driver(driver).pick_fastest()
 
-        plt.rcParams["figure.figsize"] = (10, 6)
+        #plt.rcParams["figure.figsize"] = (10, 6)
         tel = lap.get_telemetry()
 
         x = np.array(tel['X'].values)
@@ -297,3 +289,100 @@ class ChartFactory:
         plt.close("all")
 
         return uri
+    
+
+    @staticmethod
+    def generate_tire_stints(year, circuit_name, session_ty):
+        fastf1.Cache.enable_cache(CACHE_DIR)
+
+        wknd = int(circuit_ref.loc[(circuit_ref['year']==year) & (circuit_ref['name']==circuit_name)][0:1]['round'])
+        session_type = session_ty
+
+        session = fastf1.get_session(year, wknd, session_type)
+        session.load()
+        laps = session.laps
+        drivers = session.drivers
+        drivers = [session.get_driver(driver)["Abbreviation"] for driver in drivers]
+        stints = laps[["Driver", "Stint", "Compound", "LapNumber"]]
+        stints = stints.groupby(["Driver", "Stint", "Compound"])
+        stints = stints.count().reset_index()
+        stints = stints.rename(columns={"LapNumber": "StintLength"})
+
+        fig, ax = plt.subplots(figsize=(5, 10))
+        
+        for driver in drivers:
+            driver_stints = stints.loc[stints["Driver"] == driver]
+
+            previous_stint_end = 0
+            for idx, row in driver_stints.iterrows():
+                plt.barh(
+                    y=driver,
+                    width=row["StintLength"],
+                    left=previous_stint_end,
+                    color=fastf1.plotting.COMPOUND_COLORS[row["Compound"]],
+                    edgecolor="black",
+                    fill=True
+                )
+
+                previous_stint_end += row["StintLength"]
+
+        plt.title(f'{year} {session.event.EventName} - {session.name} - Tire strategies')
+        plt.xlabel("Lap Number")
+        plt.grid(False)
+        ax.invert_yaxis()
+
+        ax.spines['top'].set_visible(False)
+        ax.spines['right'].set_visible(False)
+        ax.spines['left'].set_visible(False)
+
+        plt.tight_layout()
+
+        buf = io.BytesIO()
+        fig.savefig(buf, format='png')
+        buf.seek(0)
+        string = base64.b64encode(buf.read())
+        uri = urllib.parse.quote(string)
+        plt.close("all")
+
+        return uri
+    
+
+    @staticmethod
+    def generate_position_changes(year, circuit_name):
+        fastf1.Cache.enable_cache(CACHE_DIR)
+
+        wknd = int(circuit_ref.loc[(circuit_ref['year']==year) & (circuit_ref['name']==circuit_name)][0:1]['round'])
+        session_type = 'R'
+
+        session = fastf1.get_session(year, wknd, session_type)
+        session.load()
+
+        fig, ax = plt.subplots(figsize=(12.0, 7.3))
+
+        for drv in session.drivers:
+            drv_laps = session.laps.pick_driver(drv)
+
+            abb = drv_laps['Driver'].iloc[0]
+            color = fastf1.plotting.driver_color(abb)
+
+            ax.plot(drv_laps['LapNumber'], drv_laps['Position'],
+                    label=abb, color=color)
+
+        ax.set_ylim([20.5, 0.5])
+        ax.set_yticks([1, 5, 10, 15, 20])
+        ax.set_xlabel('Lap')
+        ax.set_ylabel('Position')
+
+        ax.legend(bbox_to_anchor=(1.0, 1.02))
+        plt.title(f'{year} {session.event.EventName} - Position changes')
+        plt.tight_layout()
+
+        buf = io.BytesIO()
+        fig.savefig(buf, format='png')
+        buf.seek(0)
+        string = base64.b64encode(buf.read())
+        uri = urllib.parse.quote(string)
+        plt.close("all")
+
+        return uri
+

@@ -73,4 +73,22 @@ class Driver_Speed_Lap(forms.Form):
                                          ('SS', 'Sprint Shootout'), 
                                          ('S', 'Sprint'), 
                                          ('R', 'Race')), required=True, label="Pick a session")
+    
+
+class Tire_Stints(forms.Form):
+    circuit = forms.ModelChoiceField(required=True,label="Pick a circuit", queryset=Circuit.objects.all().order_by("name"))
+    year = forms.ChoiceField(choices=((x,x) for x in range(datetime.now().year,2021,-1)),required=True,label="Pick a year")
+    session = forms.ChoiceField(choices=(('FP1', 'FP1'), 
+                                         ('FP2', 'FP2'), 
+                                         ('FP3', 'FP3'), 
+                                         ('Q', 'Qualifying'), 
+                                         ('SS', 'Sprint Shootout'), 
+                                         ('S', 'Sprint'), 
+                                         ('R', 'Race')), required=True, label="Pick a session")
+
+
+class Position_Changes(forms.Form):
+    circuit = forms.ModelChoiceField(required=True,label="Pick a circuit", queryset=Circuit.objects.all().order_by("name"))
+    year = forms.ChoiceField(choices=((x,x) for x in range(datetime.now().year,2021,-1)),required=True,label="Pick a year")
+
 
