@@ -16,6 +16,7 @@ from timple.timedelta import strftimedelta
 
 from .models import Constructor
 
+fastf1.plotting.setup_mpl()
 mpl.use('Agg')
 
 CACHE_DIR = 'f1dataapp/f1cache'
@@ -326,7 +327,7 @@ class ChartFactory:
 
                 previous_stint_end += row["StintLength"]
 
-        plt.title(f'{year} {session.event.EventName} - {session.name} - Tire strategies')
+        plt.title(f'{year} {session.event.EventName} \n {session.name} \n Tire strategies')
         plt.xlabel("Lap Number")
         plt.grid(False)
         ax.invert_yaxis()
@@ -376,6 +377,50 @@ class ChartFactory:
         ax.legend(bbox_to_anchor=(1.0, 1.02))
         plt.title(f'{year} {session.event.EventName} - Position changes')
         plt.tight_layout()
+
+        buf = io.BytesIO()
+        fig.savefig(buf, format='png')
+        buf.seek(0)
+        string = base64.b64encode(buf.read())
+        uri = urllib.parse.quote(string)
+        plt.close("all")
+
+        return uri
+    
+
+    @staticmethod
+    def generate_driver_lap_timings(year, circuit_name, driver):
+        fastf1.Cache.enable_cache(CACHE_DIR)
+
+        wknd = int(circuit_ref.loc[(circuit_ref['year']==year) & (circuit_ref['name']==circuit_name)][0:1]['round'])
+        session_type = 'R'
+
+        session = fastf1.get_session(year, wknd, session_type)
+        session.load()
+
+        driver_laps = session.laps.pick_driver(driver)
+        pits = driver_laps[pd.notna(driver_laps['PitInTime'])]
+        driver_laps = driver_laps[pd.isna(driver_laps['PitOutTime'])]
+        driver_laps = driver_laps[pd.isna(driver_laps['PitInTime'])]
+
+        driver_laps["LapTime(s)"] = driver_laps["LapTime"].dt.total_seconds()
+
+        driver_laps = driver_laps.groupby('Stint')
+        dfs = []
+        for name, data in driver_laps:
+            dfs.append(data)
+        
+        fig, ax = plt.subplots(figsize=(10, 5))
+        for df in dfs:
+            ax.plot(df['LapNumber'], df['LapTime(s)'], color=fastf1.plotting.COMPOUND_COLORS[(df.iloc[0]['Compound'])])
+        for index, row in pits.iterrows():
+            ax.axvspan(row['LapNumber']-1, row['LapNumber']+2, ymin = 0, ymax = 1)
+            bot, top = ax.get_ylim()
+            plt.text(row['LapNumber']-0.6, (bot+top)/2, 'PIT', rotation='90', fontsize='16', color='black')
+        #ax.axvspan(25, 28, ymin = 0, ymax = 1)
+        ax.xaxis.set_label_text('Lap number')
+        ax.yaxis.set_label_text('Lap time (s)')
+        ax.set_title(f'{session.date.year} {session.event.EventName} - {driver} - Race pace')
 
         buf = io.BytesIO()
         fig.savefig(buf, format='png')

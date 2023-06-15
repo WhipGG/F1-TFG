@@ -45,6 +45,15 @@
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <i class="fa-regular fa-stopwatch"></i> Timing data
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="{% url 'f1dataapp:driver_lap_timing' %}">Driver lap timings</a></li>
+                  <li><a class="dropdown-item" href="{% url 'f1dataapp:driver_vs_driver_lap' %}">Driver vs Driver Fast Lap</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                   <i class="fas fa-tachometer-alt"></i> Speed stats
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">

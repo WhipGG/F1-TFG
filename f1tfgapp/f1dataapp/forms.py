@@ -87,8 +87,15 @@ class Tire_Stints(forms.Form):
                                          ('R', 'Race')), required=True, label="Pick a session")
 
 
-class Position_Changes(forms.Form):
+class Race_Selector(forms.Form):
     circuit = forms.ModelChoiceField(required=True,label="Pick a circuit", queryset=Circuit.objects.all().order_by("name"))
     year = forms.ChoiceField(choices=((x,x) for x in range(datetime.now().year,2021,-1)),required=True,label="Pick a year")
+
+
+class Driver_Lap_Timing(forms.Form):
+    circuit = forms.ModelChoiceField(required=True,label="Pick a circuit", queryset=Circuit.objects.all().order_by("name"))
+    year = forms.ChoiceField(choices=((x,x) for x in range(datetime.now().year,2021,-1)),required=True,label="Pick a year")
+    driver = forms.ModelChoiceField(required=True,label="Pick a driver", queryset=Driver.objects.all().filter(~Q(code='nan')).order_by("name"))
+
 
 

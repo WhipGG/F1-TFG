@@ -8,7 +8,7 @@ import datetime
 
 from .update_ergast import update_database, update_learning_dataset
 from .populateDB import populate_drivers, populate_constructors, populate_circuits
-from .forms import Prediction, process_prediction_form, Driver_vs_Driver_Lap, Driver_Speed_Lap, Tire_Stints, Position_Changes
+from .forms import Prediction, process_prediction_form, Driver_vs_Driver_Lap, Driver_Speed_Lap, Tire_Stints, Race_Selector, Driver_Lap_Timing
 from .predictions import predict
 from .models import Driver, Circuit
 from .charts import ChartFactory
@@ -117,7 +117,7 @@ def tyre_stints(request):
 def position_changes(request):
     template = 'f1dataapp/position_changes.html'
     if request.method == "POST":
-        form = Position_Changes(request.POST)
+        form = Race_Selector(request.POST)
         if form.is_valid():
             circuit = form.cleaned_data['circuit']
             year = int(form.cleaned_data['year'])
@@ -126,7 +126,24 @@ def position_changes(request):
             except:
                 return render(request, template, {'form': form, 'error':"Error: Input data does not match any event."})
         return render(request, template, {'form': form, 'chart': chart})
-    form = Position_Changes()
+    form = Race_Selector()
+    return render(request, template, {'form': form})
+
+
+def driver_lap_timings(request):
+    template = 'f1dataapp/driver_lap_timings.html'
+    if request.method == "POST":
+        form = Driver_Lap_Timing(request.POST)
+        if form.is_valid():
+            circuit = form.cleaned_data['circuit']
+            year = int(form.cleaned_data['year'])
+            driver = form.cleaned_data['driver']
+            try:
+                chart = ChartFactory.generate_driver_lap_timings(year, circuit.name, driver.code)
+            except:
+                return render(request, template, {'form': form, 'error':"Error: Input data does not match any event."})
+        return render(request, template, {'form': form, 'chart': chart})
+    form = Driver_Lap_Timing()
     return render(request, template, {'form': form})
 
 
