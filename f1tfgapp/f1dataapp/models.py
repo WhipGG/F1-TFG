@@ -15,6 +15,7 @@ class Driver(models.Model):
     url = models.CharField(max_length=1000)
     name = models.CharField(max_length=200,unique=True)
     photo = models.ImageField(upload_to='driver_images', null=True)
+    is_recent = models.BooleanField(default=False)
 
     def __str__(self) -> str:
         return self.name

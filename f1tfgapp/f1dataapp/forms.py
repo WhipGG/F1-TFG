@@ -49,8 +49,8 @@ def process_prediction_form(form):
 
 
 class Driver_vs_Driver_Lap(forms.Form):
-    driver_1 = forms.ModelChoiceField(required=True, label="Pick a driver", queryset=Driver.objects.all().filter(~Q(code='nan')).order_by("name"))
-    driver_2 = forms.ModelChoiceField(required=True, label="Pick a driver", queryset=Driver.objects.all().filter(~Q(code='nan')).order_by("name"))
+    driver_1 = forms.ModelChoiceField(required=True, label="Pick a driver", queryset=Driver.objects.all().filter(Q(is_recent=True)).order_by("name"))
+    driver_2 = forms.ModelChoiceField(required=True, label="Pick a driver", queryset=Driver.objects.all().filter(Q(is_recent=True)).order_by("name"))
     circuit = forms.ModelChoiceField(required=True, label="Pick a circuit", queryset=Circuit.objects.all().filter(Q(is_recent=True)).order_by("name"))
     year = forms.ChoiceField(choices=((x,x) for x in range(datetime.now().year,2021,-1)), required=True, label="Pick a year")
     session = forms.ChoiceField(choices=(('FP1', 'FP1'), 
@@ -63,7 +63,7 @@ class Driver_vs_Driver_Lap(forms.Form):
 
 
 class Driver_Speed_Lap(forms.Form):
-    driver = forms.ModelChoiceField(required=True,label="Pick a driver", queryset=Driver.objects.all().filter(~Q(code='nan')).order_by("name"))
+    driver = forms.ModelChoiceField(required=True,label="Pick a driver", queryset=Driver.objects.all().filter(Q(is_recent=True)).order_by("name"))
     circuit = forms.ModelChoiceField(required=True, label="Pick a circuit", queryset=Circuit.objects.all().filter(Q(is_recent=True)).order_by("name"))
     year = forms.ChoiceField(choices=((x,x) for x in range(datetime.now().year,2021,-1)),required=True,label="Pick a year")
     session = forms.ChoiceField(choices=(('FP1', 'FP1'), 
@@ -95,17 +95,17 @@ class Race_Selector(forms.Form):
 class Driver_Lap_Timing(forms.Form):
     circuit = forms.ModelChoiceField(required=True, label="Pick a circuit", queryset=Circuit.objects.all().filter(Q(is_recent=True)).order_by("name"))
     year = forms.ChoiceField(choices=((x,x) for x in range(datetime.now().year,2021,-1)),required=True,label="Pick a year")
-    driver = forms.ModelChoiceField(required=True,label="Pick a driver", queryset=Driver.objects.all().filter(~Q(code='nan')).order_by("name"))
+    driver = forms.ModelChoiceField(required=True,label="Pick a driver", queryset=Driver.objects.all().filter(Q(is_recent=True)).order_by("name"))
 
 
 class Driver_Lap_Time_Comparsion(forms.Form):
     circuit = forms.ModelChoiceField(required=True, label="Pick a circuit", queryset=Circuit.objects.all().filter(Q(is_recent=True)).order_by("name"))
     year = forms.ChoiceField(choices=((x,x) for x in range(datetime.now().year,2021,-1)),required=True,label="Pick a year")
-    driver_1 = forms.ModelChoiceField(required=True,label="Pick a driver", queryset=Driver.objects.all().filter(~Q(code='nan')).order_by("name"))
-    driver_2 = forms.ModelChoiceField(required=True,label="Pick a driver", queryset=Driver.objects.all().filter(~Q(code='nan')).order_by("name"))
-    driver_3 = forms.ModelChoiceField(required=False,label="Pick a driver", queryset=Driver.objects.all().filter(~Q(code='nan')).order_by("name"))
-    driver_4 = forms.ModelChoiceField(required=False,label="Pick a driver", queryset=Driver.objects.all().filter(~Q(code='nan')).order_by("name"))
-    driver_5 = forms.ModelChoiceField(required=False,label="Pick a driver", queryset=Driver.objects.all().filter(~Q(code='nan')).order_by("name"))
+    driver_1 = forms.ModelChoiceField(required=True,label="Pick a driver", queryset=Driver.objects.all().filter(Q(is_recent=True)).order_by("name"))
+    driver_2 = forms.ModelChoiceField(required=True,label="Pick a driver", queryset=Driver.objects.all().filter(Q(is_recent=True)).order_by("name"))
+    driver_3 = forms.ModelChoiceField(required=False,label="Pick a driver", queryset=Driver.objects.all().filter(Q(is_recent=True)).order_by("name"))
+    driver_4 = forms.ModelChoiceField(required=False,label="Pick a driver", queryset=Driver.objects.all().filter(Q(is_recent=True)).order_by("name"))
+    driver_5 = forms.ModelChoiceField(required=False,label="Pick a driver", queryset=Driver.objects.all().filter(Q(is_recent=True)).order_by("name"))
 
 
 
