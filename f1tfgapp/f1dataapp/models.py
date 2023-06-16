@@ -46,6 +46,7 @@ class Circuit(models.Model):
     country = models.CharField(max_length=200)
     url = models.CharField(max_length=1000)
     layout = models.ImageField(upload_to='circuit_layouts', null=True)
+    is_recent = models.BooleanField(default=False)
     
     def __str__(self) -> str:
         return self.name
