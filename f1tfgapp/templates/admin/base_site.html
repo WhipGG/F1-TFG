@@ -23,6 +23,10 @@
           {% csrf_token %}
           <input type="submit" class="default" value="Update Dataset" id="submitDataset">
         </form>
+        <form action="{% url 'f1dataapp:update_model' %}" method="POST" id="modelForm" onsubmit="return confirm('Do you update the ML model?');">
+          {% csrf_token %}
+          <input type="submit" class="default" value="Update Model" id="submitModel">
+        </form>
       </div>
       <div id="update-database">
         <h3>SQL Database Management</h3>

@@ -9,7 +9,7 @@ import datetime
 from .update_ergast import update_database, update_learning_dataset
 from .populateDB import populate_drivers, populate_constructors, populate_circuits
 from .forms import Prediction, process_prediction_form, Driver_vs_Driver_Lap, Driver_Speed_Lap, Tire_Stints, Race_Selector, Driver_Lap_Timing, Driver_Lap_Time_Comparsion
-from .predictions import predict
+from .predictions import predict, update_model
 from .models import Driver, Circuit
 from .charts import ChartFactory
 
@@ -207,6 +207,10 @@ def update_ergast(request):
 
 def update_dataset(request):
     update_learning_dataset()
+    return redirect("/admin")
+
+def update_model(request):
+    update_model()
     return redirect("/admin")
 
 

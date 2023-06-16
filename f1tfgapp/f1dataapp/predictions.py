@@ -101,3 +101,44 @@ def predict(grid_positions,
     df_preds = df_preds.merge(standings, how='inner', on='driverId')
     df_preds = df_preds.sort_values(by=['prediction', 'points'], ascending=[True, False])
     return df_preds
+
+
+def update_model(read_dir = 'f1dataapp/data_ready/',
+                 save_dir = 'f1dataapp/models/'):
+    df = pd.read_csv(read_dir+'LEARNING_DF_NORMAL.csv')
+    df = df.loc[df['year'] >= 2000].copy()
+
+    # Clipping maximus on grid and position
+    df['grid'] = df['grid'].clip(upper=20)
+    df['position'] = df['position'].clip(upper=20)
+    # Position to one-hot
+    one_hot = pd.get_dummies(df['position'], prefix='position')
+    df = df.drop('position',axis = 1)
+    df = df.join(one_hot)
+    # Fit columns with scaler
+    scaler = MinMaxScaler(feature_range=(-1,1))
+    columns_to_scale = ['grid', 'year', 'round', 'age',	'experience', 'driversPointsBeforeRace', 'constPointsBeforeRace']
+    df[columns_to_scale] = scaler.fit_transform(df[columns_to_scale])
+    # Prepare inputs for ML
+    y = df.iloc[:,15:35].copy()
+    drivers = df['driverId']
+    constructors = df['constructorId']
+    circuits = df['circuitId']
+    X = df.drop(['driverId', 'constructorId', 'circuitId'], axis=1)
+    X = X.drop(X.iloc[:,12:32], axis = 1)
+    # Moddel parameters dependant from input size
+    N_DRIVERS = len(drivers) + 1
+    N_CONSTRUCTORS = len(constructors) + 1
+    N_CIRCUITS = len(circuits) + 1
+    N_NUMERICS = X.shape[1]
+
+    model = tf.keras.models.load_model(save_dir+'nn_f1.h5')
+    callback = keras.callbacks.EarlyStopping(monitor='accuracy', patience=200)
+    model.fit([drivers, constructors, circuits, X],
+              y,
+              batch_size=64,
+              epochs=3000,
+              shuffle = True,
+              callbacks=[callback])
+    model.save(save_dir+'nn_f1.h5')
+    joblib.dump(scaler, save_dir+'minmaxscaler_f1.pkl')

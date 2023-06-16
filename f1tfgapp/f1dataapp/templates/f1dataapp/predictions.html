@@ -5,12 +5,14 @@
 {% block contenido %}
 <main role="main">
     <div class="container-fluid">
+        <h1 class="text-center page-title" style="margin-top: 1rem; margin-bottom: 2rem;">Next race predictions</h1>
         <div class="row mt-2">
             {% if request.method != 'POST' or error|length > 0 %}
             <div class="col-md-12">
             {% else %}
             <div class="col-md-7">
             {% endif %}
+                <h1 class="text-center mb-3">Race starting conditions</h1>
                 <form action="" method="post" class="needs-validation">
                     {% csrf_token %}
                     <div class="row">
@@ -128,11 +130,11 @@
             </div>
             {% if request.method == 'POST' and error|length == 0 %}
                 <div class="col-md-5">
-                    <h1>Predicted Results</h1>
+                    <h1 class="mb-4">Predicted Results</h1>
                     {% for driver in prediction %}
-                        <p>
+                        <h4>
                             {{ forloop.counter }}. {{ driver.name }}
-                        </p>
+                        </h4>
                     {% endfor %}
                 </div>
             {% endif %}
