@@ -8,7 +8,9 @@ import matplotlib as mpl
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
+import seaborn as sns
 import requests
+import datetime
 from fastf1.core import Laps
 from matplotlib.collections import LineCollection
 from matplotlib import cm
@@ -109,7 +111,7 @@ class ChartFactory:
 
         pole_lap_time_string = strftimedelta(pole_lap['LapTime'], '%m:%s.%ms')
 
-        plt.suptitle(f"{session.event['EventName']} {session.event.year}\n"
+        plt.suptitle(f"{session.event['EventName']} {session.event.year} - {session.name}\n"
                      f"Fastest Lap: {pole_lap_time_string} ({pole_lap['Driver']})")
 
         buf = io.BytesIO()
@@ -399,6 +401,7 @@ class ChartFactory:
         session.load()
 
         driver_laps = session.laps.pick_driver(driver)
+        """
         pits = driver_laps[pd.notna(driver_laps['PitInTime'])]
         driver_laps = driver_laps[pd.isna(driver_laps['PitOutTime'])]
         driver_laps = driver_laps[pd.isna(driver_laps['PitInTime'])]
@@ -409,18 +412,186 @@ class ChartFactory:
         dfs = []
         for name, data in driver_laps:
             dfs.append(data)
+        """
+        driver_laps["LapTime(s)"] = driver_laps["LapTime"].dt.total_seconds()
+        driver_laps = driver_laps.groupby('Stint')
+        dfs = []
+        for name, data in driver_laps:
+            dfs.append(data)
+            
+        for index in range(len(dfs)-1):
+            next_row = dfs[index+1].iloc[0].copy()
+            dfs[index].loc[len(dfs[index])] = next_row
+            dfs[index] = dfs[index].sort_values(by="LapNumber")
         
         fig, ax = plt.subplots(figsize=(10, 5))
         for df in dfs:
             ax.plot(df['LapNumber'], df['LapTime(s)'], color=fastf1.plotting.COMPOUND_COLORS[(df.iloc[0]['Compound'])])
+        """
         for index, row in pits.iterrows():
             ax.axvspan(row['LapNumber']-1, row['LapNumber']+2, ymin = 0, ymax = 1)
             bot, top = ax.get_ylim()
             plt.text(row['LapNumber']-0.6, (bot+top)/2, 'PIT', rotation='90', fontsize='16', color='black')
-        #ax.axvspan(25, 28, ymin = 0, ymax = 1)
+        """
         ax.xaxis.set_label_text('Lap number')
         ax.yaxis.set_label_text('Lap time (s)')
         ax.set_title(f'{session.date.year} {session.event.EventName} - {driver} - Race pace')
+
+        buf = io.BytesIO()
+        fig.savefig(buf, format='png')
+        buf.seek(0)
+        string = base64.b64encode(buf.read())
+        uri = urllib.parse.quote(string)
+        plt.close("all")
+
+        return uri
+    
+
+    @staticmethod
+    def driver_timing_comparison(year, circuit_name, drivers):
+        fastf1.Cache.enable_cache(CACHE_DIR)
+
+        wknd = int(circuit_ref.loc[(circuit_ref['year']==year) & (circuit_ref['name']==circuit_name)][0:1]['round'])
+        session_type = 'R'
+
+        session = fastf1.get_session(year, wknd, session_type)
+        session.load()
+        
+        fig, ax = plt.subplots(figsize=(10, 5))
+
+        for driver in drivers:
+            driver_laps = session.laps.pick_driver(driver)
+            driver_laps["LapTime(s)"] = driver_laps["LapTime"].dt.total_seconds()
+            ax.plot(driver_laps['LapNumber'], driver_laps['LapTime(s)'], color=fastf1.plotting.driver_color(driver), label=driver)
+
+        ax.xaxis.set_label_text('Lap number')
+        ax.yaxis.set_label_text('Lap time (s)')
+        ax.set_title(f'{session.date.year} {session.event.EventName} - Race pace comparison')
+        ax.legend()
+
+        buf = io.BytesIO()
+        fig.savefig(buf, format='png')
+        buf.seek(0)
+        string = base64.b64encode(buf.read())
+        uri = urllib.parse.quote(string)
+        plt.close("all")
+
+        return uri
+    
+
+    @staticmethod
+    def lap_time_distribution(year, circuit_name):
+        wknd = int(circuit_ref.loc[(circuit_ref['year']==year) & (circuit_ref['name']==circuit_name)][0:1]['round'])
+        session_type = 'R'
+
+        session = fastf1.get_session(year, wknd, session_type)
+        session.load()
+
+        point_finishers = session.drivers[:10]
+        driver_laps = session.laps.pick_drivers(point_finishers).pick_quicklaps()
+        driver_laps = driver_laps.reset_index()
+        finishing_order = [session.get_driver(i)["Abbreviation"] for i in point_finishers]
+        driver_colors = {abv: fastf1.plotting.DRIVER_COLORS[driver] for abv,
+                        driver in fastf1.plotting.DRIVER_TRANSLATE.items()}
+
+        fig, ax = plt.subplots(figsize=(10, 5))
+
+        driver_laps["LapTime(s)"] = driver_laps["LapTime"].dt.total_seconds()
+
+        sns.violinplot(data=driver_laps,
+                    x="Driver",
+                    y="LapTime(s)",
+                    inner=None,
+                    scale="area",
+                    order=finishing_order,
+                    palette=driver_colors
+                    )
+        sns.swarmplot(data=driver_laps,
+                    x="Driver",
+                    y="LapTime(s)",
+                    order=finishing_order,
+                    hue="Compound",
+                    palette=fastf1.plotting.COMPOUND_COLORS,
+                    hue_order=["SOFT", "MEDIUM", "HARD"],
+                    linewidth=0,
+                    size=5,
+                    )
+        ax.set_xlabel("Driver")
+        ax.set_ylabel("Lap Time (s)")
+        plt.title(f"{session.date.year} {session.event.EventName} - Lap Time Distributions")
+        sns.despine(left=True, bottom=True)
+        plt.tight_layout()
+        
+        buf = io.BytesIO()
+        fig.savefig(buf, format='png')
+        buf.seek(0)
+        string = base64.b64encode(buf.read())
+        uri = urllib.parse.quote(string)
+        plt.close("all")
+
+        return uri
+    
+
+    @staticmethod
+    def plot_driver_standings():
+        request = requests.get('http://ergast.com/api/f1/current/driverStandings.json')
+        data = request.json()
+        standings = data['MRData']['StandingsTable']['StandingsLists'][0]['DriverStandings']
+        driver_standings = pd.DataFrame(columns=['name', 'position','points'])
+        for position in standings:
+            name = position['Driver']['code']
+            pos = int(position['position'])
+            points = int(position['points'])
+            driver_standings.loc[len(driver_standings)] = [name, pos, points]
+        
+        fig, ax = plt.subplots(figsize=(6, 5))
+        colors = [fastf1.plotting.driver_color(row['name'])  for index, row in driver_standings.iterrows()]
+        bars = ax.barh(driver_standings['name'], driver_standings['points'], color=colors)
+        ax.set_yticks(driver_standings['name'], labels=driver_standings['name'])
+        ax.invert_yaxis()
+        ax.set_title(f"{datetime.datetime.now().year} Season Driver Standings")
+        ax.bar_label(bars)
+        
+        buf = io.BytesIO()
+        fig.savefig(buf, format='png')
+        buf.seek(0)
+        string = base64.b64encode(buf.read())
+        uri = urllib.parse.quote(string)
+        plt.close("all")
+
+        return uri
+    
+
+    @staticmethod
+    def plot_constructor_standings():
+        request = requests.get('http://ergast.com/api/f1/current/constructorStandings.json')
+        data = request.json()
+        standings = data['MRData']['StandingsTable']['StandingsLists'][0]['ConstructorStandings']
+        constructor_standings = pd.DataFrame(columns=['name', 'position','points'])
+        for position in standings:
+            name = position['Constructor']['name']
+            pos = int(position['position'])
+            points = int(position['points'])
+            constructor_standings.loc[len(constructor_standings)] = [name, pos, points]
+        
+            fig, ax = plt.subplots(figsize=(6, 5))
+            const_abv = {'Red Bull':'RBR',
+                        'Mercedes':'MER',
+                        'Aston Martin':'AMR',
+                        'Ferrari':'FER',
+                        'Alpine F1 Team':'APN',
+                        'McLaren':'MCL',
+                        'Haas F1 Team':'HAA',
+                        'Alfa Romeo':'ARR',
+                        'AlphaTauri':'APT',
+                        'Williams':'WIL'}
+            lab = [const_abv[row['name']]for index, row in constructor_standings.iterrows()]
+            colors = [fastf1.plotting.team_color(row['name'])  for index, row in constructor_standings.iterrows()]
+            bars = ax.barh(constructor_standings['name'], constructor_standings['points'], color=colors)
+            ax.set_yticks(constructor_standings['name'], labels=lab)
+            ax.invert_yaxis()
+            ax.set_title(f"{datetime.datetime.now().year} Season Constructor Standings")
+            ax.bar_label(bars)
 
         buf = io.BytesIO()
         fig.savefig(buf, format='png')

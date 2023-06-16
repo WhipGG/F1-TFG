@@ -98,4 +98,15 @@ class Driver_Lap_Timing(forms.Form):
     driver = forms.ModelChoiceField(required=True,label="Pick a driver", queryset=Driver.objects.all().filter(~Q(code='nan')).order_by("name"))
 
 
+class Driver_Lap_Time_Comparsion(forms.Form):
+    circuit = forms.ModelChoiceField(required=True,label="Pick a circuit", queryset=Circuit.objects.all().order_by("name"))
+    year = forms.ChoiceField(choices=((x,x) for x in range(datetime.now().year,2021,-1)),required=True,label="Pick a year")
+    driver_1 = forms.ModelChoiceField(required=True,label="Pick a driver", queryset=Driver.objects.all().filter(~Q(code='nan')).order_by("name"))
+    driver_2 = forms.ModelChoiceField(required=True,label="Pick a driver", queryset=Driver.objects.all().filter(~Q(code='nan')).order_by("name"))
+    driver_3 = forms.ModelChoiceField(required=False,label="Pick a driver", queryset=Driver.objects.all().filter(~Q(code='nan')).order_by("name"))
+    driver_4 = forms.ModelChoiceField(required=False,label="Pick a driver", queryset=Driver.objects.all().filter(~Q(code='nan')).order_by("name"))
+    driver_5 = forms.ModelChoiceField(required=False,label="Pick a driver", queryset=Driver.objects.all().filter(~Q(code='nan')).order_by("name"))
+
+
+
 

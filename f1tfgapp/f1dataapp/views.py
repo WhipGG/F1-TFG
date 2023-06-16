@@ -8,7 +8,7 @@ import datetime
 
 from .update_ergast import update_database, update_learning_dataset
 from .populateDB import populate_drivers, populate_constructors, populate_circuits
-from .forms import Prediction, process_prediction_form, Driver_vs_Driver_Lap, Driver_Speed_Lap, Tire_Stints, Race_Selector, Driver_Lap_Timing
+from .forms import Prediction, process_prediction_form, Driver_vs_Driver_Lap, Driver_Speed_Lap, Tire_Stints, Race_Selector, Driver_Lap_Timing, Driver_Lap_Time_Comparsion
 from .predictions import predict
 from .models import Driver, Circuit
 from .charts import ChartFactory
@@ -27,7 +27,10 @@ def index(request):
         dates = str(start_date.day) + ' - ' + str(end_date.day) + ' ' + end_date.strftime('%b').lower()
     else:
         dates = str(start_date.day) + ' ' + start_date.strftime('%b').lower() + ' - ' + str(end_date.day) + ' ' + end_date.strftime('%b').lower()
-    return render(request, 'f1dataapp/index.html', {'raceName':race_name, 'layout':circuit_layout, 'dates':dates})
+    drivers_chart = ChartFactory.plot_driver_standings()
+    constructors_chart = ChartFactory.plot_constructor_standings()
+    return render(request, 'f1dataapp/index.html', {'raceName':race_name, 'layout':circuit_layout, 'dates':dates, 
+                                                    'drivers_chart':drivers_chart, 'constructors_chart':constructors_chart})
 
 
 def predictions(request):
@@ -145,6 +148,53 @@ def driver_lap_timings(request):
         return render(request, template, {'form': form, 'chart': chart})
     form = Driver_Lap_Timing()
     return render(request, template, {'form': form})
+
+
+def driver_timing_comparison(request):
+    template = 'f1dataapp/driver_timing_comparison.html'
+    if request.method == "POST":
+        form = Driver_Lap_Time_Comparsion(request.POST)
+        if form.is_valid():
+            circuit = form.cleaned_data['circuit']
+            year = int(form.cleaned_data['year'])
+            driver_1 = form.cleaned_data['driver_1']
+            driver_2 = form.cleaned_data['driver_2']
+            driver_3 = form.cleaned_data['driver_3']
+            driver_4 = form.cleaned_data['driver_4']
+            driver_5 = form.cleaned_data['driver_5']
+            drivers = []
+            drivers.append(driver_1.code)
+            drivers.append(driver_2.code)
+            if driver_3 is not None:
+                drivers.append(driver_3.code)
+            if driver_4 is not None:
+                drivers.append(driver_4.code)
+            if driver_5 is not None:
+                drivers.append(driver_5.code)
+            try:
+                chart = ChartFactory.driver_timing_comparison(year, circuit.name, drivers)
+            except:
+                return render(request, template, {'form': form, 'error':"Error: Input data does not match any event."})
+        return render(request, template, {'form': form, 'chart': chart})
+    form = Driver_Lap_Time_Comparsion()
+    return render(request, template, {'form': form})
+
+
+def lap_time_distribution(request):
+    template = 'f1dataapp/lap_time_distribution.html'
+    if request.method == "POST":
+        form = Race_Selector(request.POST)
+        if form.is_valid():
+            circuit = form.cleaned_data['circuit']
+            year = int(form.cleaned_data['year'])
+            try:
+                chart = ChartFactory.lap_time_distribution(year, circuit.name)
+            except:
+                return render(request, template, {'form': form, 'error':"Error: Input data does not match any event."})
+        return render(request, template, {'form': form, 'chart': chart})
+    form = Race_Selector()
+    return render(request, template, {'form': form})
+
 
 
 

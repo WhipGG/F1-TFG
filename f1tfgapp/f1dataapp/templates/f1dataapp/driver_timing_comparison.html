@@ -1,0 +1,27 @@
+{% extends 'f1dataapp/base.html' %}
+
+{% block tituloPagina %} F1 Data - Driver timing comparison {% endblock %}
+
+{% block contenido %}
+<main role="main">
+    <div class="container">
+        <h1 class="text-center page-title" style="margin-top: 1rem; margin-bottom: 1rem;">Timing comparison</h1>
+        <form action="" method="post" class="text-center">
+            {% csrf_token %}
+            <div class="form-group">
+                {{ form }}
+                <input type='submit' value='Generate Chart' class="btn btn-primary"/>
+            </div>
+        </form>
+        <div class="container">
+            <div class="row mt-4">
+                <div class="col-md-1"></div>
+                <div class="col-md-10 d-flex justify-content-center">
+                    <img src="data:image/png;base64,{{ chart }}" alt="">
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+        </div>
+    </div>
+</main>
+{% endblock %}
