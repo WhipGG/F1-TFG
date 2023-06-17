@@ -23,9 +23,13 @@
           {% csrf_token %}
           <input type="submit" class="default" value="Update Dataset" id="submitDataset">
         </form>
-        <form action="{% url 'f1dataapp:update_model' %}" method="POST" id="modelForm" onsubmit="return confirm('Do you update the ML model?');">
+        <form action="{% url 'f1dataapp:update_model' %}" method="POST" id="modelForm" onsubmit="return confirm('Do you update the ML model?\nWARNING: This will take a long time.');">
           {% csrf_token %}
           <input type="submit" class="default" value="Update Model" id="submitModel">
+        </form>
+        <form action="{% url 'f1dataapp:update_old_races' %}" method="POST" id="oldRacesForm" onsubmit="return confirm('Do you update the Old races telemetry database?\nWARNING: This will take a long time.');">
+          {% csrf_token %}
+          <input type="submit" class="default" value="Update Old races telemetry" id="submitOldRaces">
         </form>
       </div>
       <div id="update-database">

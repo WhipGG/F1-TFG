@@ -1,4 +1,4 @@
-import fastf1 as ff1
+import fastf1
 from datetime import datetime
 import requests
 import pandas as pd
@@ -57,3 +57,16 @@ def populate_circuits():
                     ) for index, row in circuits.iterrows()]
     Circuit.objects.bulk_create(objs)
 
+
+
+def fetch_old_race_data():
+    fastf1.Cache.enable_cache('f1dataapp/f1cache')
+    session_types = ["FP1", "FP2", "FP3", "Q", "R", "S", "SS"]
+    for year in range(2022, datetime.now().year+1):
+        for round_number in range(1, 25):
+            for session_type in session_types:
+                try:
+                    session = fastf1.get_session(year, round_number, session_type)
+                    session.load()
+                except:
+                    pass

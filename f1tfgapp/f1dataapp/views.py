@@ -7,7 +7,7 @@ import requests
 import datetime
 
 from .update_ergast import update_database, update_learning_dataset
-from .populateDB import populate_drivers, populate_constructors, populate_circuits
+from .populateDB import populate_drivers, populate_constructors, populate_circuits, fetch_old_race_data
 from .forms import Prediction, process_prediction_form, Driver_vs_Driver_Lap, Driver_Speed_Lap, Tire_Stints, Race_Selector, Driver_Lap_Timing, Driver_Lap_Time_Comparsion
 from .predictions import predict, update_model
 from .models import Driver, Circuit
@@ -211,6 +211,10 @@ def update_dataset(request):
 
 def update_model(request):
     update_model()
+    return redirect("/admin")
+
+def update_old_races(request):
+    fetch_old_race_data()
     return redirect("/admin")
 
 
