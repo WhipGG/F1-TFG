@@ -157,7 +157,7 @@ raceId,weather,weather_warm,weather_cold,weather_dry,weather_wet,weather_cloudy
 156,"Sunny, cool, Air: 19–21 °C (66–70 °F);Track 27 °C (81 °F)",0,0,0,0,0
 157,"Cloudy, mild, dry, air temp: 24°C",0,0,0,0,0
 158,"Sunny,[2] Air Temp: 20 °C",0,0,0,0,0
-159,"Sunny, Air: 22 °C (72 °F), Track: 35 °C (95 °F)",0,0,0,0,0
+159,"Sunny with some clouds, Air: 22 °C (72 °F), Track: 35 °C (95 °F)",1,0,0,0,0
 160,"Overcast, mild, dry; 16 °C (61 °F)",0,0,0,0,0
 161,"Sunny, mild, dry, Air Temp: 10 °C (50 °F)",0,0,0,0,0
 162,"Sunny, Mild, Dry",0,0,1,0,0
@@ -1085,7 +1085,7 @@ raceId,weather,weather_warm,weather_cold,weather_dry,weather_wet,weather_cloudy
 1102,Partly cloudy,0,0,0,0,1
 1104,"Cloudy, with some rain intervals",0,0,0,1,0
 1105,Cloudy,0,0,0,0,1
-1106,,0,0,0,0,0
+1106,Partly cloudy,0,0,0,0,1
 1107,,0,0,0,0,0
 1108,,0,0,0,0,0
 1109,,0,0,0,0,0
