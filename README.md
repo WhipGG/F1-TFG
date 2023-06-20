@@ -31,7 +31,7 @@ Proyecto *Django* para el desarrollo de la aplicación web que permita realizar 
  - **`manage.py`**: archivo creado por Django que ejecuta el servidor web y los diferentes comandos del proyecto.
 
 
-Para poder activar el proyecto, es necesario tener instalados todos los paquetes descritos en la sección de [requisitos](#requisitos-necesarios) excepto `LightGBM` y `XGBoost`. Una vex estén satisfechos los requisitos, abrimos una consola en la carpeta que contiene el archivo `manage.py` y ejecutamos el comando "`python manage.py runserver`".
+Para poder activar el proyecto, es necesario tener instalados todos los paquetes descritos en la sección de [requisitos](#requisitos-necesarios) excepto `LightGBM`, `XGBoost` y `SciPy`. Una vex estén satisfechos los requisitos, abrimos una consola en la carpeta que contiene el archivo `manage.py` y ejecutamos el comando "`python manage.py runserver`".
 
 
 ## Carpeta *notebooks*
