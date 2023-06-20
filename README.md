@@ -72,7 +72,7 @@ Para poder ejecutar los archivos en este repositorio se necesitan los siguientes
  - MatplotLib  (`pip install matplotlib`)
  - Seaborn  (`pip install seaborn`)
  - Tensorflow  (https://www.tensorflow.org/install)
- - scikit-learn  (https://www.tensorflow.org/install)
+ - scikit-learn  (https://scikit-learn.org/stable/install.html)
  - LightGBM  (`pip install lightgbm`)
  - XGBoost  (`pip install xgboost`)
  - SciPy  (`pip install scipy`)
