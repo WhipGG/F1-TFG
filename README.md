@@ -26,7 +26,7 @@ Proyecto *Django* para el desarrollo de la aplicación web que permita realizar 
     - **`update_ergast.py`**: script que actualiza la copia de la base de datos de Ergast en la carpeta `f1db_csv`.
  - **f1tfgapp**: carpeta para gestionar el proyecto creada por Django, contiene los ajustes del proyecto. y se utiliza para cambiar los mismos y añadir las diferentes aplicaciones (en nuestro caso solo hay una).
  - **media**: carpeta para alojar las imágenes que se carguen en las bases de datos del proyecto, se ha configurado en `f1tfgapp/settings.py`.
- - **templates**: modificaciones de los templates de Django para la interfaz del administrados de la web.
+ - **templates**: modificaciones de los templates de Django para la interfaz del administrador de la web.
  - **`db.sqlite3`**: base de datos utilizada durante el desarrollo del proyecto.
  - **`manage.py`**: archivo creado por Django que ejecuta el servidor web y los diferentes comandos del proyecto.
 
