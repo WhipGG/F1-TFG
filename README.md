@@ -2,7 +2,7 @@
 
 Autor: Manuel Ventura
 
-En este resposito se aloja el código creado durante la realización del TFG de predicción de resultados de Fórmula 1. A continuación se exponen los contenidos de cada carpeta del repositorio y los requisitos para ejecurar.
+En este resposito se aloja el código creado durante la realización del TFG titulado "Predicción de resultados de Fórmula 1", realizado en la Escuela Técnica superios de Ingeniería Informática de la Universidad de Sevilla. A continuación se exponen los contenidos de cada carpeta del repositorio y los requisitos para ejecurar.
 
 
 ## Carpeta *f1tfgapp*
