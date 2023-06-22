@@ -311,7 +311,7 @@ class ChartFactory:
         stints = stints.count().reset_index()
         stints = stints.rename(columns={"LapNumber": "StintLength"})
 
-        fig, ax = plt.subplots(figsize=(5, 10))
+        fig, ax = plt.subplots(figsize=(12, 7))
         
         for driver in drivers:
             driver_stints = stints.loc[stints["Driver"] == driver]
@@ -329,7 +329,7 @@ class ChartFactory:
 
                 previous_stint_end += row["StintLength"]
 
-        plt.title(f'{year} {session.event.EventName} \n {session.name} \n Tire strategies')
+        plt.title(f'{year} {session.event.EventName} - {session.name} \n Tire strategies')
         plt.xlabel("Lap Number")
         plt.grid(False)
         ax.invert_yaxis()
